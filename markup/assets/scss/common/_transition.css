@@ -1,0 +1,111 @@
+/* router page change motion */
+.page-change-enter-active {
+  transition: all 0.35s ease;
+}
+
+.page-change-leave-active {
+  transition: all 0.75s ease;
+}
+
+.page-change {
+  position: absolute;
+}
+
+.page-change-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.page-change-leave-to {
+  opacity: 0;
+  transform: translateY(100%) rotateZ(45deg);
+}
+
+/* slide out motion */
+.slide-out-enter-active {
+  transition: all 0.75s ease;
+}
+
+.slide-out-leave-active {
+  transition: all 0.75s;
+}
+
+.slide-out-enter {
+  opacity: 0;
+  transform: translateX(10%);
+}
+
+.slide-out-leave-to {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+/* slide out motion */
+.slideY-enter-active {
+  transition: all 0.75s ease;
+}
+
+.slideY-leave-active {
+  transition: all 0.75s;
+}
+
+.slideY-enter {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 0.75s ease;
+}
+
+.slideY-leave-to {
+  opacity: 0;
+  transform: translateY(-20%);
+}
+
+/* slide out motion */
+.fade-enter-active {
+  transition: all 0.75s ease;
+}
+
+.fade-leave-active {
+  transition: all 0.75s;
+}
+
+.fade-enter {
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.shake {
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.short-shake {
+  animation: shake-horizontal 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+@keyframes shake-horizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+/*# sourceMappingURL=transition.css.map */

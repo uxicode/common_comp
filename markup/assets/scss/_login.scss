@@ -1,0 +1,149 @@
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    position: relative;
+    width: calc(100% - 660px);
+    height: 100vh;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../assets/images/pages/login-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contents-wrap {
+      position: fixed;
+      right: 0;
+      width: 660px;
+      height: 100%;
+      margin: 0;
+      background-color: #262731;
+
+      .contents {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.kiwoom-title {
+  position: absolute;
+  width: 308px;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+  .logo-cnt {
+    display: inline-block;
+    width: 79px;
+    > img {width: 100%;}
+  }
+  .main-txt {
+    padding: 18px 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -1px;
+    color: #d9dadd;
+  }
+
+  .detail {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+
+/* login */
+.login-form {
+  position: absolute;
+  width: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .form-cnt {
+    .login-tit {
+      font-size: 30px;
+      color: #d9dadd;
+      padding-bottom: 60px;
+    }
+
+    .login-btn {
+      .btn {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+
+  .form-group {
+    .form-label {
+      font-size: 16px;
+      font-weight: 300;
+      color: #72747f;
+    }
+
+    .form-control {
+      font-size: 13px;
+      font-weight: 300;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: solid 1px #404656;
+      background-color: #262731;
+    }
+  }
+
+  .form-group + .form-group {
+    margin-top: 10px;
+  }
+}
+
+
+/* password */
+.pw-form, .create-season {
+  .form-cnt {
+    font-size: 13px;
+    padding: 27px 24px 80px 24px;
+    .form-group {
+      margin-bottom: 37px;
+      &:last-child {margin-bottom: 0;}
+      > label {padding-bottom: 5px;}
+    }
+  }
+
+  .notice-cnt {
+    font-size: 13px;
+    padding: 20px 24px;
+    background-color: #f6f6f6;
+    > strong {
+      font-weight: normal;
+      color: #565656;
+    }
+    .notice-list {
+      padding-top: 5px;
+      line-height: 1.54;
+      color: #989898;
+    }
+  }
+}
+
+.create-season{
+  .form-cnt{
+    padding: 24px 24px 30px 24px;
+  }
+}

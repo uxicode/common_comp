@@ -1,0 +1,173 @@
+//@import "bootstrap-extended/utilities"
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: none;
+}
+
+/* ================ btn custom ================ */
+.btn{
+  position: relative;
+  &-ss{
+    min-width: 142px;
+    padding: 0.858rem 1.5em; //jbc 추가 38px
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  //아이콘 유무에 상관 없이 사이즈 통일
+  &-md{min-width: 115px;}
+
+  &-lg{
+    min-width: 160px;
+    font-weight: 500;
+    &-s{
+      min-width: 97px;
+      padding: 1.15rem 1.29rem !important;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  > i{padding-right: 7px;}
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*form + btn(form-btn)*/
+.form-group + .btn-cnt > .btn-ss{margin-left: 10px;}
+
+
+.btn-round{
+  border-radius: 50px;
+}
+
+
+/* btn 색상 추가 */
+.btn-blue {
+  color: #ffffff;
+  border-color: #4c76f4;
+  background-color: #4c76f4;
+}
+.btn-purple {
+  color: #ffffff;
+  border-color: #ac51ef;
+  background-color: #ac51ef;
+  &:hover {
+    color: #ffffff;
+    border-color: #ba6ef0;
+    background: #ba6ef0;
+  }
+}
+.btn-green{
+  border-color: #02955f;
+  color: #02955f;
+}
+
+.btn-success, .btn-warning, .btn-info{
+  color: #fff !important;
+}
+
+/*btn outline*/
+.btn-outline{
+  &-primary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(115, 103, 240, 0.04);
+    color: #7367f0;
+  }
+  &-secondary:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(130, 134, 139, 0.04);
+    color: #82868b;
+  }
+  &-success:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(40, 199, 111, 0.04);
+    color: #28c76f;
+  }
+  &-danger:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(234, 84, 85, 0.04);
+    color: #ea5455;
+  }
+  &-warning:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(255, 159, 67, 0.04);
+    color: #ff9f43;
+  }
+  &-info:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(103, 144, 240, 0.12);
+    color: #00cfe8;
+  }
+  &-dark:hover:not(.disabled):not(:disabled) {
+    background-color: rgba(75, 75, 75, 0.04);
+    color: #4b4b4b;
+  }
+}
+
+.btn:focus, .btn.focus, .btn:active, .btn.active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/*btn checkbox & radio group*/
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: #7367f0;
+  background-color: rgba(115, 103, 240, 0.2) !important;
+}
+
+
+
+
+
+.btn-close {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.75rem;
+  height: 0.75rem;
+  padding: 0.25em 0.25em;
+  color: currentColor;
+  background: none;
+  border: 0;
+  border-radius: 0.357rem;
+  opacity: 0.4;
+  &:after{
+    font-family: 'icomoon' !important;
+    content: "\e8f6";
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+  }
+}
+
+.menu-btn {
+  width: 174px;
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px #ebe9f1;
+  font-size: 12px;
+  font-weight: 500;
+  color: #525252;
+
+  i {
+    margin-right: 8px;
+    vertical-align: bottom;
+    font-size: 20px;
+  }
+}
+
+// ksj : .modal-footer > * {margin: 0.25rem} 제거
+.modal-footer .btn-cnt {
+  margin: 0;
+}

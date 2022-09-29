@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>EG.1</title>
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+    <header>
+        <nav class="header-navbar navbar navbar-expand-lg">
+            <div class="navbar-container d-flex content">
+<!--                <div class="bookmark-wrapper d-flex align-items-center">-->
+<!--                    <ul class="nav navbar-nav bookmark-icons">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="nav-link">-->
+<!--                                <span class="badge bg-info">LIVE!</span>-->
+<!--                                <i class="icon-radio"></i>-->
+<!--                                <span class="tit">경기 라이브</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="nav-link">-->
+<!--                                <span class="badge bg-danger">1</span>-->
+<!--                                <i class="icon-gift"></i>-->
+<!--                                <span class="tit">이벤트 마감</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#" class="nav-link">-->
+<!--                                <span class="badge bg-danger">N</span>-->
+<!--                                <i class="icon-headphones"></i>-->
+<!--                                <span class="tit">1:1 문의</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+                <ul class="nav navbar-nav align-items-center ms-auto">
+                    <li class="nav-item dropdown dropdown-user">
+                        <a class="nav-link dropdown-toggle dropdown-user-link">
+                            <div class="user-nav d-sm-flex">
+                                <span class="user-name fw-bold">Heroesbase</span>
+                                <span class="user-status fw-light">슈퍼운영자</span>
+                            </div>
+                            <i class="icon-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="user-menu">
+                <li><a href="#"><i class="icon-lock"></i><span class="item fw-bold">비밀번호 변경</span></a></li>
+                <li><a href="#"><i class="icon-log-out"></i><span class="item fw-bold">로그아웃</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="aside-menu menu-fixed menu-dark">
+            <div class="aside-header">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="img-cnt">
+                            <img src="./assets/images/common/logo.png" alt="">
+                        </span>
+                        <p class="logo-tit">KiwoomHeroes<br> APP Admin</p>
+                    </a>
+                </h1>
+            </div>
+            <div class="aside-content">
+                <ul class="navigation">
+                    <li class="nav-item">
+                        <ul>
+                            <li><a href="#" class="aside-main-tit"><i class="icon-home"></i><span class="aside-tit">대시보드</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">회원 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-user"></i><span class="aside-tit">회원정보 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">멤버쉽 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-users"></i><span class="aside-tit">멤버쉽 이력 관리</span></a></li>
+                            <li><a href="#"><i class="icon-award"></i><span class="aside-tit">등급/포인트 관리</span></a></li>
+                            <li><a href="#"><i class="icon-star"></i><span class="aside-tit">멤버쉽 혜택 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">배너관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-copy"></i><span class="aside-tit">메인배너 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">이벤트 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-radio"></i><span class="aside-tit">라이브 이벤트</span></a></li>
+                            <li class="active"><a href="#"><i class="icon-general-event"></i><span class="aside-tit">일반 이벤트</span></a></li>
+                            <li><a href="#"><i class="icon-gift"></i><span class="aside-tit">경품 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">1:1 문의</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-headphones"></i><span class="aside-tit">1:1 문의</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">직관</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-star"></i><span class="aside-tit">직관 승요 관리</span></a></li>
+                            <li><a href="#"><i class="icon-check-circle"></i><span class="aside-tit">체크인 내역 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">커뮤니티 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-clock"></i><span class="aside-tit">타임라인 관리</span></a></li>
+                            <li><a href="#"><i class="icon-clipboard"></i><span class="aside-tit">펜게시판 관리</span></a></li>
+                            <li><a href="#"><i class="icon-alert-triangle"></i><span class="aside-tit">신고글 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">알림 관리</p>
+                        <ul>
+                             <li><a href="#"><i class="icon-bell"></i><span class="aside-tit">Push 관리</span></a></li>
+                             <li><a href="#"><i class="icon-mail"></i><span class="aside-tit">Email 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">앱 설정</p>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="icon-help-circle"></i><span class="aside-tit">자주묻는질문 관리</span><span class="more-btn"><i class="icon-chevron-right float-rt mgr-0"></i></span></a>
+                                <ul class="sub-content" style="display: block">
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="icon-layers"></i><span class="aside-tit">버전 관리</span></a></li>
+                            <li><a href="#"><i class="icon-file-text"></i><span class="aside-tit">약관 관리</span></a></li>
+                            <li><a href="#"><i class="icon-notice"></i><span class="aside-tit">공지사항 관리</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="nav-item-tit">관리자 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-settings"></i><span class="aside-tit">관리자 관리</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents-wrap">
+            <div class="contents">
+                <div class="content-header">
+                    <div class="content-header-left float-lt col-md-9 col-12 mb-2">
+                        <h2 class="content-header-title float-start ">일반 이벤트 현황</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">이벤트 관리</li>
+                                <li class="breadcrumb-item">일반 이벤트</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="btn-cnt float-rt">
+                        <button class="btn btn-blue" type="button"><i class="icon-plus"></i> <span>일반 이벤트 등록</span></button>
+                    </div>
+                </div>
+                <div class="content-body">
+<!--                    <div class="slide-cnt">-->
+<!--                        <p class="tit-txt">금주 마감 예정 이벤트</p>-->
+<!--                        &lt;!&ndash;첫진입 시 좌우 스크롤 우측 화살표 버튼만 보여짐 스크롤 한번 이상 시 좌측 화살표 버튼 생성&ndash;&gt;-->
+<!--                        &lt;!&ndash;<button type="button" class="prev-btn"><i class="icon-chevron-left"></i></button>&ndash;&gt;-->
+<!--                        <div class="slide-view">-->
+<!--                            <ul class="slide-wrap">-->
+<!--                                <li class="item">-->
+<!--                                    <a href="javascript:void(0)">-->
+<!--                                        <div class="card mgb-0">-->
+<!--                                            <div class="card-body slide">-->
+<!--                                                <div class="slide-contents">-->
+<!--                                                    <div class="img-cnt">-->
+<!--                                                        <img src="./assets/images/pages/img-preview2.png" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <div class="txt-cnt">-->
+<!--                                                        <p class="tit-txt">10일 연속 출석체크 상품 증정 이벤트!</p>-->
+<!--                                                        <div class="detail">-->
+<!--                                                            <p>마감 : <span class="txt-purple">D-0일</span> (2021-11-16 00:00)</p>-->
+<!--                                                            <p>참여 : 2201명</p>-->
+<!--                                                            <p>유형 : 상품형(상품증정)</p>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="btn-cnt">-->
+<!--                                                            <button type="button" class="btn btn-purple btn-ss">당첨자 추첨하기</button>-->
+<!--                                                        </div>-->
+<!--                                                        <span class="num-cnt"><strong class="current-num">1</strong>/ <span>10</span></span>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="item">-->
+<!--                                    <a href="javascript:void(0)">-->
+<!--                                        <div class="card mgb-0">-->
+<!--                                            <div class="card-body slide">-->
+<!--                                                <div class="slide-contents">-->
+<!--                                                    <div class="img-cnt">-->
+<!--                                                        <img src="./assets/images/pages/img-preview2.png" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <div class="txt-cnt">-->
+<!--                                                        <p class="tit-txt">10일 연속 출석체크 상품 증정 이벤트!</p>-->
+<!--                                                        <div class="detail">-->
+<!--                                                            <p>마감 : <span class="txt-purple">D-0일</span> (2021-11-16 00:00)</p>-->
+<!--                                                            <p>참여 : 2201명</p>-->
+<!--                                                            <p>유형 : 상품형(상품증정)</p>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="btn-cnt">-->
+<!--                                                            <button type="button" class="btn btn-purple btn-ss">당첨자 추첨하기</button>-->
+<!--                                                        </div>-->
+<!--                                                        <span class="num-cnt"><strong class="current-num">1</strong>/ <span>10</span></span>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="item">-->
+<!--                                    <a href="javascript:void(0)">-->
+<!--                                        <div class="card mgb-0">-->
+<!--                                            <div class="card-body slide">-->
+<!--                                                <div class="slide-contents">-->
+<!--                                                    <div class="img-cnt">-->
+<!--                                                        <img src="./assets/images/pages/img-preview2.png" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <div class="txt-cnt">-->
+<!--                                                        <p class="tit-txt">10일 연속 출석체크 상품 증정 이벤트!</p>-->
+<!--                                                        <div class="detail">-->
+<!--                                                            <p>마감 : <span class="txt-purple">D-0일</span> (2021-11-16 00:00)</p>-->
+<!--                                                            <p>참여 : 2201명</p>-->
+<!--                                                            <p>유형 : 상품형(상품증정)</p>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="btn-cnt">-->
+<!--                                                            <button type="button" class="btn btn-purple">당첨자 추첨하기</button>-->
+<!--                                                        </div>-->
+<!--                                                        <span class="num-cnt"><strong class="current-num">1</strong>/ <span>10</span></span>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="item">-->
+<!--                                    <a href="javascript:void(0)">-->
+<!--                                        <div class="card mgb-0">-->
+<!--                                            <div class="card-body slide">-->
+<!--                                                <div class="slide-contents">-->
+<!--                                                    <div class="img-cnt">-->
+<!--                                                        <img src="./assets/images/pages/img-preview2.png" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <div class="txt-cnt">-->
+<!--                                                        <p class="tit-txt">10일 연속 출석체크 상품 증정 이벤트!</p>-->
+<!--                                                        <div class="detail">-->
+<!--                                                            <p>마감 : <span class="txt-purple">D-0일</span> (2021-11-16 00:00)</p>-->
+<!--                                                            <p>참여 : 2201명</p>-->
+<!--                                                            <p>유형 : 상품형(상품증정)</p>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="btn-cnt">-->
+<!--                                                            <button type="button" class="btn btn-purple btn-ss">당첨자 추첨하기</button>-->
+<!--                                                        </div>-->
+<!--                                                        <span class="num-cnt"><strong class="current-num">1</strong>/ <span>10</span></span>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <button type="button" class="next-btn"><i class="icon-chevron-right"></i></button>-->
+<!--                    </div>-->
+                    <div class="filter-cnt">
+                        <div class="card filter">
+                            <div class="card-body">
+
+                                <div class="inline-form d-flex">
+                                    <div class="form-group mgr-10">
+                                      <span class="select-label">기간</span>
+                                      <div class="input-set">
+                                            <input type="text" class="form-control cal" placeholder="2021-11-17 ~ 2021-11-30" id="demo1" style="width:246px">
+                                            <button class="ico-btn" type="button"><i class="icon-calendar" data-target="#demo1"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mgr-10">
+                                        <label for="select2" class="tit">혜택유형</label>
+                                        <select id="select2" class="form-select" style="width:150px;">
+                                            <option value="">전체</option>
+                                            <option value="이벤트">이벤트</option>
+                                            <option value="공지사항">공지사항</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mgr-10">
+                                        <label for="select3" class="tit">추첨유형</label>
+                                        <select id="select3" class="form-select" style="width:150px;">
+                                            <option value="">선착순+랜덤추첨</option>
+                                            <option value="답변">답변</option>
+                                            <option value="미답변">미답변</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mgr-10">
+                                        <label for="select4" class="tit">메인배너게시</label>
+                                        <select id="select4" class="form-select" style="width:150px;">
+                                            <option value="">메인배너 Y</option>
+                                            <option value="이벤트">이벤트</option>
+                                            <option value="공지사항">공지사항</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mgr-10">
+                                        <label for="select5" class="tit">상태</label>
+                                        <select id="select5" class="form-select" style="width:150px;">
+                                            <option value="">전체</option>
+                                            <option value="이벤트">이벤트</option>
+                                            <option value="공지사항">공지사항</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-search ms-auto">
+                                        <div class="input-group" style="width:366px;">
+                                            <input type="text" class="form-control" placeholder="제목 + 내용으로 검색">
+                                            <!--<button class="btn btn-dark" type="button">검색</button>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <!--<div class="filter-group d-inline-flex">
+                                    <span class="tit">선택된 필터</span>
+                                    <span class="filter-tag">미답변 <button type="button"><i class="icon-x1"></i></button></span>
+                                    <span class="filter-tag mgl-12">이벤트 <button type="button"><i class="icon-x1"></i></button></span>
+                                    <span class="filter-tag mgl-12"><i class="icon-calendar"></i> 2021-11-17 ~ 2021-11-30 <button type="button"><i class="icon-x1"></i></button></span>
+                                </div>-->
+                                <div class="btn-cnt d-inline-flex float-rt">
+                                    <button type="button" class="btn btn-outline-primary btn-ss mgr-10"><i class="icon-rotate-ccw"></i>필터 초기화</button>
+                                    <button type="button" class="btn btn-dark btn-ss">조회하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-cnt">
+                        <div class="card tb-layout mgt-20 radius-none">
+                            <div class="card-body list-type">
+                                <div class="tb-cnt">
+                                    <table class="tb list">
+                                        <colgroup>
+                                            <col style="width:5%">
+                                            <col style="width:9%">
+                                            <col style="width:12%">
+                                            <col style="width:auto">
+                                            <col style="width:8%">
+                                            <col style="width:8%">
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" style="width:5%">순서</th>
+                                            <th scope="col" style="width:9%">
+                                                <button type="button" class="ico-toggle">등록일</button>
+                                            </th>
+                                            <th scope="col" style="width:12%">이미지</th>
+                                            <th scope="col" style="width:auto">제목</th>
+                                            <th scope="col" style="width:8%">혜택유형</th>
+                                            <th scope="col" style="width:8%">추첨유형</th>
+                                            <th scope="col" style="width:10%">이벤트기간</th>
+                                            <th scope="col" style="width:10%">메인배너게시</th>
+                                            <th scope="col" style="width:10%">응모현황</th>
+                                            <th scope="col" style="width:10%">
+                                                <button type="button" class="ico-toggle">마감일/상태</button>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- start: 테이블 셀 컨텐츠 영역 -->
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021시즌 주니어캠프 2기모집</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">상품형</p>
+                                                    <span class="badge badge-light-primary sm">상품증정</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">2021-11-15 20:10 ~ <br> 2021-11-15 20:30</td>
+                                            <td>
+                                                <span class="badge bg-info sm">Y</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt txt-purple">D-day (-01:12)</p>
+                                                    <span class="badge bg-purple">마감일</span>
+                                                    <button type="button" class="btn btn-purple btn-sm">추첨하기</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">고척스카이돔 초대권 증정 이벤트</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">포인트형</p>
+                                                    <span class="badge badge-light-success sm">포인트증정</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">
+                                                <div style="min-width: 105px;">
+                                                    2021-11-15 20:10 ~ <br> 2021-11-15 20:30
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-gray sm">N</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <button class="icon-btn"><i class="icon-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021시즌 주니어캠프 2기모집</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">참여형</p>
+                                                    <span class="badge badge-light-warning sm">자선행사</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">2021-11-15 20:10 ~ <br> 2021-11-15 20:30</td>
+                                            <td>
+                                                <span class="badge bg-gray sm">N</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">D-2</p>
+                                                    <span class="badge bg-blue">진행중</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021시즌 주니어캠프 2기모집</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">참여형</p>
+                                                    <span class="badge badge-light-warning sm">진행예정</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">2021-11-15 20:10 ~ <br> 2021-11-15 20:30</td>
+                                            <td>
+                                                <span class="badge bg-gray sm">N</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="text-success">D-4</p>
+                                                    <span class="badge bg-success">진행예정</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="paused">
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021시즌 주니어캠프 2기모집</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">참여형</p>
+                                                    <span class="badge badge-light-warning sm">자선행사</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">2021-11-15 20:10 ~ <br> 2021-11-15 20:30</td>
+                                            <td>
+                                                <span class="badge bg-gray sm">N</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt txt-gray">D-10</p>
+                                                    <span class="badge bg-warning">일시중지</span>
+                                                    <button type="button" class="btn btn-warning btn-sm">재개하기</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="disabled">
+                                            <td><span>1</span></td>
+                                            <td><span class="date">2021-11-12</span><br><span class="time">20:10</span>
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt">
+                                                    <img src="./assets/images/pages/img-preview.png" alt="">
+                                                </div>
+                                            </td>
+
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021시즌 주니어캠프 2기모집</a>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <p class="bdg-txt">참여형</p>
+                                                    <span class="badge badge-light-warning sm">자선행사</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span>선착순</span>
+                                            </td>
+                                            <td class="text-start">2021-11-15 20:10 ~ <br> 2021-11-15 20:30</td>
+                                            <td>
+                                                <span class="badge bg-gray sm">N</span>
+                                            </td>
+                                            <td>
+                                                <span class="txt-underline">2,201명</span>
+                                            </td>
+                                            <td>
+                                                <div class="badge-cnt">
+                                                    <button class="icon-btn w-100"><i class="icon-trash"></i></button>
+                                                    <span class="badge bg-gray">종료</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- end: 테이블 셀 컨텐츠 영역 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-cnt mgb-50">
+                        <ul class="pagination justify-content-center mt-2">
+                            <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item next"><a class="page-link" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userId": "jbc2119@gmail.com",
+      "password": "0000",
+      "nickname": "오드아이",
+      "point": {
+        "pointId": 0,
+        "currentPoint": 0
+      },
+      "pointHistory":[
+        {
+          "pointHistoryId": 0,
+          "reason": "string",
+          "beforePoint":18000,
+          "afterPoint": 2000,
+          "changedPoint": 20000
+        },
+        {
+          "pointHistoryId": 0,
+          "reason": "string",
+          "beforePoint": 16000,
+          "afterPoint": 200,
+          "changedPoint": 18000
+        },
+        {
+          "pointHistoryId": 0,
+          "reason": "string",
+          "beforePoint": 10000,
+          "afterPoint": 6000,
+          "changedPoint": 16000
+        }
+      ],
+      "commentDtos": [
+        {
+          "commentId": 0,
+          "commentContent": "comments test",
+          "postId": 0,
+          "postContent": "post content test",
+          "userImageUrl": "string",
+          "createdDate": "2022-08-12T08:45:29.530Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": "kim@email.com",
+      "password": "0000"
+    },
+    {
+      "id": 3,
+      "userId": "cho@email.com",
+      "password": "0000"
+    }
+  ]
+}

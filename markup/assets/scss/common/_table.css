@@ -1,0 +1,111 @@
+.tb-style {
+  display: table;
+}
+.tb-style.full {
+  width: 100%;
+}
+
+.tb-row {
+  display: table-row;
+}
+
+.tb-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.tb-cell.top {
+  vertical-align: top;
+}
+.tb-cell.mid {
+  vertical-align: middle;
+}
+.tb-cell.btm {
+  vertical-align: bottom;
+}
+
+/*Table*/
+.tb-cnt .tb {
+  width: 100%;
+  table-layout: fixed;
+}
+.tb-cnt .tb caption {
+  border: 0 !important;
+}
+.tb-cnt .tb td {
+  word-break: break-word;
+}
+.tb-cnt .tb.form tr th {
+  font-weight: normal;
+}
+.tb-cnt .tb.form tr td {
+  padding: 20px 0;
+  text-align: left;
+}
+.tb-cnt .tb.list thead tr th {
+  text-align: center;
+  padding: 10px 16px;
+  font-weight: normal;
+  background-color: #f3f2f7;
+}
+.tb-cnt .tb.list thead tr th:first-child {
+  border-left: none;
+}
+.tb-cnt .tb.list tr:nth-child(2n+1) td {
+  background-color: #ffffff;
+}
+.tb-cnt .tb.list tbody td {
+  text-align: center;
+  padding: 4px 16px;
+  background-color: #ffffff;
+}
+.tb-cnt .tb.list tbody td:last-child .icon-btn > i {
+  font-size: 20px;
+}
+.tb-cnt .tb.list tbody tr {
+  border-bottom: 1px solid #ebe9f1;
+}
+.tb-cnt .tb.list tbody tr:hover td {
+  background-color: rgba(233, 233, 233, 0.2);
+}
+.tb-cnt .tb.list tbody tr:last-child {
+  border-bottom: 0;
+}
+.tb-cnt .tb.list tbody td:first-child, .tb-cnt .tb.list tfoot td:first-child {
+  border-left: none;
+}
+
+/*Scroll Table*/
+.tb-scroll {
+  position: relative;
+  overflow: hidden;
+}
+.tb-scroll .tb-cnt {
+  overflow-y: auto;
+}
+.tb-scroll .tb-cnt .tb thead {
+  display: inline-table;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.tb-cnt .tb.list tbody tr.active {
+  background-color: #1a4067;
+  opacity: 0.2;
+}
+
+.tb-cnt .tb.list tbody tr.active:hover {
+  background-color: transparent;
+}
+.tb-cnt .tb.list tbody tr.active:hover a {
+  color: yellow;
+}
+
+/* ================= card custom ================= */
+.card-body.list-type {
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=table.css.map */

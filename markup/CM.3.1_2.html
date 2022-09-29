@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+  <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>CM.3.1_2 커뮤니티관리_신고글관리_신고된글상세(게시글case)</title>
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+  <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+  <header>
+    <nav class="header-navbar navbar navbar-expand-lg">
+      <div class="navbar-container d-flex content">
+        <!-- start: 20220401 -->
+        <!--<div class="bookmark-wrapper d-flex align-items-center">
+              <ul class="nav navbar-nav bookmark-icons">
+                  <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link">
+                          <span class="badge bg-info">LIVE!</span>
+                          <i class="icon-radio"></i>
+                          <span class="tit">경기 라이브</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link">
+                          <span class="badge bg-danger">1</span>
+                          <i class="icon-gift"></i>
+                          <span class="tit">이벤트 마감</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link">
+                          <span class="badge bg-danger">N</span>
+                          <i class="icon-headphones"></i>
+                          <span class="tit">1:1 문의</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>-->
+        <!-- end: 20220401 -->
+        <ul class="nav navbar-nav align-items-center ms-auto">
+          <li class="nav-item dropdown dropdown-user">
+            <a class="nav-link dropdown-toggle dropdown-user-link">
+              <div class="user-nav d-sm-flex">
+                <span class="user-name fw-bold">Heroesbase</span>
+                <span class="user-status fw-light">슈퍼운영자</span>
+              </div>
+              <i class="icon-chevron-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="user-menu">
+        <li><a href="#"><i class="icon-lock"></i><span class="item fw-bold">비밀번호 변경</span></a></li>
+        <li><a href="#"><i class="icon-log-out"></i><span class="item fw-bold">로그아웃</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="aside-menu menu-fixed menu-dark">
+      <div class="aside-header">
+        <h1 class="logo">
+          <a href="javascript:void(0)">
+                        <span class="img-cnt">
+                            <img src="./assets/images/common/logo.png" alt="">
+                        </span>
+            <p class="logo-tit">KiwoomHeroes<br> APP Admin</p>
+          </a>
+        </h1>
+      </div>
+      <div class="aside-content">
+        <ul class="navigation">
+          <li class="nav-item">
+            <ul>
+              <li><a href="#" class="aside-main-tit"><i class="icon-home"></i><span
+                  class="aside-tit">대시보드</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">회원 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-user"></i><span class="aside-tit">회원정보 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">멤버쉽 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-users"></i><span class="aside-tit">멤버쉽 이력 관리</span></a></li>
+              <li><a href="#"><i class="icon-award"></i><span class="aside-tit">등급/포인트 관리</span></a></li>
+              <li><a href="#"><i class="icon-star"></i><span class="aside-tit">멤버쉽 혜택 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">배너관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-copy"></i><span class="aside-tit">메인배너 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">이벤트 관리</p>
+            <ul>
+              <li class="active"><a href="#"><i class="icon-radio"></i><span
+                  class="aside-tit">라이브 이벤트</span></a></li>
+              <li><a href="#"><i class="icon-general-event"></i><span class="aside-tit">일반 이벤트</span></a>
+              </li>
+              <li><a href="#"><i class="icon-gift"></i><span class="aside-tit">경품 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">1:1 문의</p>
+            <ul>
+              <li><a href="#"><i class="icon-headphones"></i><span class="aside-tit">1:1 문의</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">직관</p>
+            <ul>
+              <li><a href="#"><i class="icon-star"></i><span class="aside-tit">직관 승요 관리</span></a></li>
+              <li><a href="#"><i class="icon-check-circle"></i><span
+                  class="aside-tit">체크인 내역 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">커뮤니티 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-clock"></i><span class="aside-tit">타임라인 관리</span></a></li>
+              <li><a href="#"><i class="icon-clipboard"></i><span class="aside-tit">펜게시판 관리</span></a>
+              </li>
+              <li><a href="#"><i class="icon-alert-triangle"></i><span class="aside-tit">신고글 관리</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">알림 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-bell"></i><span class="aside-tit">Push 관리</span></a></li>
+              <li><a href="#"><i class="icon-mail"></i><span class="aside-tit">Email 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">앱 설정</p>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"><i class="icon-help-circle"></i><span
+                    class="aside-tit">자주묻는질문 관리</span><span class="more-btn"><i
+                    class="icon-chevron-right float-rt mgr-0"></i></span></a>
+                <ul class="sub-content" style="display: block">
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                  </li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                  </li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="icon-layers"></i><span class="aside-tit">버전 관리</span></a></li>
+              <li><a href="#"><i class="icon-file-text"></i><span class="aside-tit">약관 관리</span></a></li>
+              <li><a href="#"><i class="icon-notice"></i><span class="aside-tit">공지사항 관리</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <p class="nav-item-tit">관리자 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-settings"></i><span class="aside-tit">관리자 관리</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents-wrap">
+      <div class="contents">
+        <div class="content-header">
+          <div class="content-header-left col-md-9 col-12 mb-2">
+            <h2 class="content-header-title float-start">신고된 글 상세</h2>
+            <div class="breadcrumb-wrapper">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">커뮤니티 관리</li>
+                <li class="breadcrumb-item">신고글 관리</li>
+                <li class="breadcrumb-item">신고된 글 상세</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-body">
+          <div class="table-cnt">
+            <div class="card tb-layout">
+              <div class="card-body form-type">
+                <div class="tb-cnt">
+                  <table class="tb form">
+                    <colgroup>
+                      <col style="width: 10%;">
+                      <col style="width: 40%;">
+                      <col style="width: 10%;">
+                      <col style="width: 40%;">
+                    </colgroup>
+                    <tbody>
+                    <!-- start: 테이블 셀 컨텐츠 영역 -->
+                    <tr>
+                      <th>제목</th>
+                      <td>
+                        <div class="form-group" style="width: 550px;">
+                          <input type="text" class="form-control" value="용병 투수 어떤 투수 올지 궁금합니다." readonly>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>해시태그</th>
+                      <td colspan="5">
+                        <div class="filter-group d-inline-flex">
+                          <span class="filter-tag">2022가즈아<button type="button"></button></span>
+                          <span class="filter-tag mgl-12">용병투수<button type="button"></button></span>
+                          <span class="filter-tag mgl-12">히어로즈화이팅<button type="button"></button></span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>내용</th>
+                      <td>
+                        <textarea class="form-control word-bk" style="width: 552px; height: 236px;"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>작성자</th>
+                      <td>
+                        <p class="writer-desc">
+                          <span>김민지</span>
+                          <span>jhk1232@naver.com</span>
+                          <span>키우까마까</span>
+                        </p>
+                      </td>
+                      <th>신고당한횟수</th>
+                      <td>
+                        <span>게시글 : <strong class="posting-num">1</strong>회</span>  <span class="pdl-10">댓글 : <strong class="comment-num">4</strong>회</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>신고일</th>
+                      <td>
+                        <span>2021-12-10 07:03:37</span>
+                      </td>
+                      <th>신고수</th>
+                      <td>
+                        <span>1</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>신고자</th>
+                      <td>
+                        <p class="writer-desc">
+                          <span>김진현</span>
+                          <span>heroes0989@naver.com</span>
+                          <span>키우까마까</span>
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>공개 여부</th>
+                      <td>
+                        <span class="badge sm bg-skyblue">Y</span>
+                      </td>
+                    </tr>
+                    <!-- end: 테이블 셀 컨텐츠 영역 -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="btn-cnt float-lt">
+                  <button type="button" class="btn btn-outline-primary btn-lg"><i class="icon-chevron-left"></i>목록으로</button>
+                </div>
+                <div class="btn-cnt float-rt">
+                  <button type="button" class="btn btn-primary btn-lg">공개여부변경</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-cnt">
+            <div class="card tb-layout">
+              <div class="top-cnt m-1">
+                <p>댓글 총 <span class="current-num">8</span>개</p>
+              </div>
+              <div class="card-body list-type">
+                <div class="tb-scroll">
+                  <div class="tb-cnt" style="height: 785px;">
+                    <table class="tb list mgt-40">
+                      <colgroup>
+                        <col style="width:auto">
+                        <col style="width:15%">
+                        <col style="width:7%">
+                        <col style="width:7%">
+                        <col style="width:7%">
+                        <col style="width:7%">
+                      </colgroup>
+                      <thead>
+                      <tr>
+                        <th scope="col" style="width:auto">내용</th>
+                        <th scope="col" style="width:15%">작성자</th>
+                        <th scope="col" style="width:7%">작성일</th>
+                        <th scope="col" style="width:7%">신고수</th>
+                        <th scope="col" style="width:7%">공개 여부</th>
+                        <th scope="col" style="width:7%">
+                          <div class="form-check tb">
+                            <input class="form-check-input" type="checkbox" id="chk11">
+                          </div>
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <!-- start: 테이블 셀 컨텐츠 영역 -->
+                      <tr>
+                        <td class="text-start">
+                          <p class="word-bk" style="width: 547px;">온라인 매진 시 현장에서 구매 가능한 티켓이 있나요? </p>
+                        </td>
+                        <td>
+                          <a href="javascript:void(0)">Kiwoom1234@naver.com</a>
+                        </td>
+                        <td>
+                          <span>2021-11-12</span><br>
+                          <span>18:00</span>
+                        </td>
+                        <td>
+                          <a href="javascript:void(0)" class="txt-underline">10</a>
+                        </td>
+                        <td>
+                          <span class="badge sm bg-skyblue">Y</span>
+                        </td>
+                        <td>
+                          <div class="form-check tb">
+                            <input class="form-check-input" type="checkbox" id="chk12" checked>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="active">
+                        <td class="text-start">
+                          <p style="width: 547px;">용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.</p>
+                        </td>
+                        <td>
+                          <a href="javascript:void(0)">Kiwoom1234@naver.com</a>
+                        </td>
+                        <td>
+                          <span>2021-11-12</span><br>
+                          <span>18:00</span>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <span class="badge sm bg-skyblue">Y</span>
+                        </td>
+                        <td>
+                          <div class="form-check tb">
+                            <input class="form-check-input" type="checkbox" id="chk13">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-start">
+                          <p style="width: 547px;">용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.용병 투수
+                            어떤 투수 올지 궁금합니다.용병 투수 어떤 투수 올지 궁금합니다.</p>
+                        </td>
+                        <td>
+                          <a href="javascript:void(0)">Kiwoom1234@naver.com</a>
+                        </td>
+                        <td>
+                          <span>2021-11-12</span><br>
+                          <span>18:00</span>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <span class="badge sm bg-skyblue">Y</span>
+                        </td>
+                        <td>
+                          <div class="form-check tb">
+                            <input class="form-check-input" type="checkbox" id="chk13">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="paused">
+                        <td class="text-start">
+                          <p class="word-bk" style="width: 547px;">온라인 매진 시 현장에서 구매 가능한 티켓이
+                            있나요? </p>
+                        </td>
+                        <td>
+                          <a href="javascript:void(0)">Kiwoom1234@naver.com</a>
+                        </td>
+                        <td>
+                          <span>2021-11-12</span><br>
+                          <span>18:00</span>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <span class="badge sm bg-gray">N</span>
+                        </td>
+                        <td>
+                          <div class="form-check tb">
+                            <input class="form-check-input" type="checkbox" id="chk6">
+                          </div>
+                        </td>
+
+                      </tr>
+                      <!-- end: 테이블 셀 컨텐츠 영역 -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="btn-cnt float-rt">
+                  <button type="button" class="btn btn-dark btn-lg-s">선택숨김</button>
+                  <button type="button" class="btn btn-dark btn-lg-s mgl-10">선택공개</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

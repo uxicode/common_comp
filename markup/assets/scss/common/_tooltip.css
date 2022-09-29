@@ -1,0 +1,73 @@
+/* ===================== tooltip custom ===================== */
+.tooltip {
+  position: relative !important;
+  display: inline-block;
+  opacity: 1;
+}
+
+.tooltip .tooltip-text {
+  display: block;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.tooltip .tooltip-text.top {
+  top: -15px;
+  left: 50%;
+}
+.tooltip .tooltip-text.top:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 44%;
+  border-top: 6px solid black;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.tooltip .tooltip-text.btm {
+  top: 68px;
+  left: 50%;
+}
+.tooltip .tooltip-text.btm:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 44%;
+  border-bottom: 6px solid black;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.tooltip .tooltip-text.right {
+  top: 27px;
+  right: -127%;
+}
+.tooltip .tooltip-text.right:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -7px;
+  border-right: 7px solid black;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.tooltip .tooltip-text.left {
+  top: 27px;
+  left: -51%;
+}
+.tooltip .tooltip-text.left:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  border-left: 7px solid black;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+/*# sourceMappingURL=tooltip.css.map */

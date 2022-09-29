@@ -1,0 +1,539 @@
+//@import "./mixin.scss";
+
+/*form-group*/
+.form-group {
+  position: relative;
+
+  .btn-delete {
+    @include pos-vertical($right: 13px);
+
+    .icon-x1:before {
+      font-size: $btn-font-size;
+      color: #5e5873;
+    }
+  }
+}
+
+//.inline-form{
+//  label, .dot{
+//    display:inline-block;
+//    padding:0 2px;
+//    line-height: 21px;
+//    vertical-align: bottom;
+//  }
+//  .form-group {
+//    display: inline-block;
+//    margin-bottom: 0;
+//    vertical-align: middle;
+//  }
+//  .form-control {
+//    display: inline-block;
+//    //width: auto;
+//    vertical-align: middle;
+//  }
+//  // ksj
+//  span {
+//    margin-right: 15px;
+//    font-weight: 500;
+//  }
+//  &.type2{
+//    .form-control{display: block}
+//  }
+//}
+
+.inline-form{
+  font-size: 12px;
+  .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .form-control {
+    display: inline-block;
+    //width: auto;
+    vertical-align: middle
+  }
+
+  .form-group + .form-group {
+    margin-left: 10px;
+  }
+
+  //ksj
+  > span {
+    margin-right: 15px;
+    //font-weight: 500;
+  }
+
+  &.type-2 {
+    .form-control {
+      display: block;
+    }
+  }
+
+}
+
+.form-group + .btn-cnt{
+  display: inline-block;
+}
+
+.form-group + .tb-style{
+  color: #b9b9c3;
+  margin-top: 5px;
+}
+
+/*form-select*/
+//jbc
+.form-select{
+  min-width: 54px;
+  width: auto;
+  display: inline-block;
+  font-size: 12px;
+  background-image: url("../images/common/icon-chevron-down.png");
+  background-position: right 1rem center;
+}
+
+.form-label + .form-select{
+  margin-left: 14px;
+}
+
+
+
+.form-select-sm{
+  background-position: right 0.5rem center;
+}
+.form-group{
+  .tit{
+    padding-bottom:3px;
+    font-size: 11px;
+    color: #1d1d1d;
+    line-height: 1.4;
+  }
+  .tit+.form-select{
+    display: block;
+  }
+}
+
+/* dropdown */
+
+.dropdown-menu {
+  transform: none !important;
+
+  & > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-size: 12px;
+    font-weight: 400;
+    color: #525252;
+    white-space: nowrap;
+    .date{color: #b9b9c3;}
+  }
+}
+
+
+.dropdown-cnt[data-dropdown] {
+  position: relative;
+
+  & > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .dropdown-options {
+    width:100%;
+    min-height:42px;
+    padding: 6px 40px 6px 16px;
+    text-align:left;
+    font-size: 12px;
+    color: #525252;
+    border-color:#d8d6de;
+    background-color:#fff;
+
+    &:after{
+      font-family: "icomoon" !important;
+      content:"\e842";
+      display: inline-block;
+      position: absolute;
+      top:12px;
+      right:10px;
+      color:#4d5256;
+      font-size:16px;
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+      transition: all .3s ease-in-out;
+    }
+    &:hover, &.active, &.focus{
+      background-color: #fff;
+      border: 1px solid #d8d6de;
+    }
+
+    &.disabled {
+      background-color: #efefef;
+    }
+  }
+
+  &.active {
+    &>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-radius:6px;
+    }
+
+    > .dropdown-options {
+      border-color: #d8d6de;
+      &:after {
+        top: 12px;
+        color: #5e5873;
+        transform: rotate(-180deg);
+      }
+    }
+
+    > .dropdown-menu{
+      display: block;
+      width:100%;
+    }
+
+    .dropdown-menu{
+      width:100%;
+      max-height:280px;
+      padding: 0;
+      overflow-y:auto;
+      box-shadow: 0 2px 6px 0 #ececec;
+      li {
+        border-bottom: 1px solid #e4e4e4;
+        a{
+          padding: 11px 20px;
+          &:hover {
+            background-color: #7367f0;
+            color: #ffffff;
+          }
+        }
+        &:last-child{border: 0}
+      }
+    }
+
+    .dropdown-menu.type2 {
+      li {
+        a {
+          padding: 20px!important;
+
+          span {
+            &:after {
+              content: '';
+              width: 1px;
+              height: 14px;
+              background-color: #ebe9f1;
+              display: inline-block;
+              margin: -2px 10px;
+            }
+
+            &:last-child {
+              &:after {content: none;}
+            }
+          }
+
+          &:hover {
+            span {
+              &:after {background-color: #ffffff;}
+              .num {color: #ffffff;}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/*calendar*/
+.inline-form.calendar > span{margin-right: 14px; vertical-align: middle} /*시작, 종료*/
+.inline-form.calendar .form-group {
+  position: relative;
+  //margin-right: 10px;
+  &:last-child{margin-right: 0}
+}
+.form-control.cal{
+  padding-left: 38px!important;
+}
+
+.form-control + .ico-btn {
+  z-index: 3;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 14px;
+  padding: 0;
+  color: #979797;
+  background-color: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+}
+
+
+
+/* from-control border 없는 타입 */
+.form-control.cal.type2{
+  border: 0;
+  background: transparent;
+  padding-left: 30px!important;
+}
+
+.form-control.cal.type2 + .ico-btn{
+  position: absolute;
+  right: 80%;
+}
+
+
+
+
+
+/* 달력 아이콘 배경 색 변경 cye */
+.form-control.cal:disabled  + button > i,
+.form-control.cal[readonly] + button > i {
+  background: #efefef!important;
+}
+
+
+/* ================= form-group custom ================= */
+//jbc
+.input-group{
+  > .form-control{
+  //border-top-left-radius: 6px!important;
+  //border-bottom-left-radius: 6px!important;
+}
+
+  &:not(.bootstrap-touchspin):focus-within {
+  box-shadow: none;
+}
+
+  > .sch-desc{padding: 7px 0; margin-right: 12px;}
+  .btn{
+    font-size: 12px;
+  }
+}
+
+
+.form-group > .input-group{
+  //display: inline-table!important;
+}
+
+.form-group .btn.btn-outline-primary{
+  border: 1px solid #d8d6de;
+  color: #5e5873;
+  &:focus{
+    border: 1px solid #7367f0;
+    transition: border-color 0.15s ease-in-out;
+  }
+}
+
+
+/* ================= inline-spacing custom ================= */
+.inline-spacing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inline-spacing > * {
+  margin-top: 0;
+  margin-right: 1.5rem;
+}
+
+
+/* ================= form-check custom ================= */
+.form-check-label {
+  padding-left: 3px !important;
+  vertical-align: middle;
+}
+
+.form-check.tb{
+  padding-left: 0;
+  .form-check-input{
+    float: none;
+    margin-left: 0;
+  }
+}
+
+/* ================= textarea custom ================= */
+textarea.form-control[readonly]{
+  background: transparent;
+  color: #525252;
+  &:focus {
+    border: 1px solid #d8d6de;
+  }
+}
+
+textarea.form-control {
+  line-height: normal;
+  min-height: 78px;
+}
+
+
+
+
+//jbc - 추가
+.form-message {
+  position:absolute;
+  left:0;
+  margin-top:4px;
+  font-size:10px;
+  color:#b9b9c3;
+
+  &.count {
+    @include pos-vertical($right:0);
+    color:#848499;
+  }
+
+  &.error {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.17px;
+    color: #ea5455;
+  }
+  &.approval {color:#629f00;}
+
+}
+
+/* password error*/
+.error .form-control, .form-control.error{
+  border-color: #ff4d4d;
+}
+
+// ksj
+.form-control[readonly] {color: #b9b9c3;}
+
+.form-control.link {
+  background-color: #fffaeb;
+}
+
+.input-set {
+  position: relative;
+}
+
+// filter-select
+.card.filter {
+  .card-body {
+    padding: 15px 20px;
+
+    .form-group {
+      display: inline-flex;
+      flex-direction: column;
+      vertical-align: top;
+
+      .select-label {
+        margin-bottom: 4px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #525252;
+      }
+    }
+
+    .btn-group {
+      vertical-align: bottom;
+    }
+
+    .input-group {
+      float: right;
+      margin-top: 18px;
+
+      // 검색 버튼
+      button {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    .dropdown-options {
+      padding: 0.71428rem 1rem;
+      min-height: auto;
+      line-height: 1.4;
+      border-radius: 6px !important;
+
+      &:after {top: 8px;}
+    }
+  }
+  .card-footer {padding: 15px 20px;}
+}
+
+.modal-body .filter {
+  box-shadow: none;
+  border: solid 1px #ebe9f1;
+}
+
+.filter-group {
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #525252;
+  }
+  .tit {
+    margin-right: 20px;
+    align-self: center;
+  }
+  .filter-tag {
+    height: 38px;
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 19px;
+    background-color: #efefef;
+
+    button {
+      float: right;
+      margin-left: 13px;
+      font-size: 15px;
+    }
+  }
+}
+
+
+
+/* ================ btn-group custom ================ */
+.btn-group {
+  > .btn {
+    padding: 0.86rem 1.5rem;
+    &:hover {
+      color: #525252;
+      z-index: 0;
+    }
+  }
+  .btn-outline-desc {
+    border-color: #d8d6de;
+    color: #525252;
+    font-size: 12px;
+    &:hover {color: #7367f0;}
+  }
+}
+
+.btn-check:checked + .btn-outline-desc{
+  color: #7367f0;
+  border-color: #7367f0!important;
+}
+
+.btn-outline-desc.disabled {
+  background-color: #efefef;
+  color: #b9b9c3;
+  opacity: 1;
+}
+
+
+
+/* ===================== switch custom ===================== */
+.form-switch {
+  padding-left: 0!important;
+  .form-check-input {
+    margin-left: 0!important;
+    float: none;
+  }
+}
+
+
+/* ===================== nav-pills custom ===================== */
+.nav-pills .nav-link {
+  padding: 0.86rem 1.5rem;
+  min-width: 97px;
+}

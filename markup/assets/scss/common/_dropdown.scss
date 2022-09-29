@@ -1,0 +1,34 @@
+
+.dropdown-toggle {
+  &.btn-outline-primary {
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-primary.svg");
+    }
+  }
+  &.btn-outline-secondary{
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-secondary.svg");
+    }
+  }
+  &.btn-outline-success{
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-success.svg");
+    }
+  }
+  &.btn-outline-danger{
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-danger.svg");
+    }
+  }
+  &.btn-outline-warning{
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-warning.svg");
+    }
+  }
+  &.btn-outline-info{
+    &::after {
+      background-image: url("../images/common/dropdown-arrow-info.svg");
+    }
+  }
+}
+

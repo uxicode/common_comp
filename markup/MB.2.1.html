@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+  <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>MB.2.1</title>
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+  <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+  <header>
+    <nav class="header-navbar navbar navbar-expand-lg">
+      <div class="navbar-container d-flex content">
+<!--        <div class="bookmark-wrapper d-flex align-items-center">-->
+<!--          <ul class="nav navbar-nav bookmark-icons">-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-info">LIVE!</span>-->
+<!--                <i class="icon-radio"></i>-->
+<!--                <span class="tit">경기 라이브</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-danger">1</span>-->
+<!--                <i class="icon-gift"></i>-->
+<!--                <span class="tit">이벤트 마감</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-danger">N</span>-->
+<!--                <i class="icon-headphones"></i>-->
+<!--                <span class="tit">1:1 문의</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+        <ul class="nav navbar-nav align-items-center ms-auto">
+          <li class="nav-item dropdown dropdown-user">
+            <a class="nav-link dropdown-toggle dropdown-user-link">
+              <div class="user-nav d-sm-flex">
+                <span class="user-name fw-bold">Heroesbase</span>
+                <span class="user-status fw-light">슈퍼운영자</span>
+              </div>
+              <i class="icon-chevron-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="user-menu">
+        <li><a href="#"><i class="icon-lock"></i><span class="item fw-bold">비밀번호 변경</span></a></li>
+        <li><a href="#"><i class="icon-log-out"></i><span class="item fw-bold">로그아웃</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="aside-menu menu-fixed menu-dark">
+      <div class="aside-header">
+        <h1 class="logo">
+          <a href="#">
+                        <span class="img-cnt">
+                            <img src="./assets/images/common/logo.png" alt="">
+                        </span>
+            <p class="logo-tit">KiwoomHeroes<br> APP Admin</p>
+          </a>
+        </h1>
+      </div>
+      <div class="aside-content">
+        <ul class="navigation">
+          <li class="nav-item">
+            <ul>
+              <li><a href="#" class="aside-main-tit"><i class="icon-home"></i><span class="aside-tit">대시보드</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">회원 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-user"></i><span class="aside-tit">회원정보 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">멤버쉽 관리</p>
+            <ul>
+              <li class="active"><a href="#"><i class="icon-award"></i><span class="aside-tit">멤버쉽 이력 관리</span></a></li>
+              <li><a href="#"><i class="icon-award"></i><span class="aside-tit">등급/포인트 관리</span></a></li>
+              <li><a href="#"><i class="icon-star"></i><span class="aside-tit">멤버쉽 혜택</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">배너관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-copy"></i><span class="aside-tit">메인배너 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">이벤트 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-radio"></i><span class="aside-tit">라이브 이벤트</span></a></li>
+              <li><a href="#"><i class="icon-general-event"></i><span class="aside-tit">일반 이벤트</span></a></li>
+              <li><a href="#"><i class="icon-gift"></i><span class="aside-tit">경품 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">1:1 문의</p>
+            <ul>
+              <li><a href="#"><i class="icon-headphones"></i><span class="aside-tit">1:1 문의</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">커뮤니티 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-clock"></i><span class="aside-tit">타임라인 관리</span></a></li>
+              <li><a href="#"><i class="icon-clipboard"></i><span class="aside-tit">펜게시판 관리</span></a></li>
+              <li><a href="#"><i class="icon-alert-triangle"></i><span class="aside-tit">신고글 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">알림 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-bell"></i><span class="aside-tit">Push 관리</span></a></li>
+              <li><a href="#"><i class="icon-smartphone"></i><span class="aside-tit">SMS 관리</span></a></li>
+              <li><a href="#"><i class="icon-mail"></i><span class="aside-tit">Email 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">앱 설정</p>
+            <ul>
+              <li>
+                <a href="#"><i class="icon-help-circle"></i><span class="aside-tit">자주묻는질문 관리</span><span class="more-btn"><i class="icon-chevron-right float-rt mgr-0"></i></span></a>
+                <ul class="sub-content" style="display: block">
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="icon-layers"></i><span class="aside-tit">버전 관리</span></a></li>
+              <li><a href="#"><i class="icon-file-text"></i><span class="aside-tit">약관 관리</span></a></li>
+              <li><a href="#"><i class="icon-notice"></i><span class="aside-tit">공지사항 관리</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <p class="nav-item-tit">관리자 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-settings"></i><span class="aside-tit">관리자 관리</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents-wrap">
+      <div class="contents">
+        <div class="content-header">
+          <div class="content-header-left col-md-9 col-12">
+            <div class="breadcrumbs-top">
+              <div class="col-12">
+                <h2 class="content-header-title float-start">멤버쉽 이력 관리 상세</h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">멤버쉽 관리</li>
+                    <li class="breadcrumb-item">등급/포인트 관리</li>
+                    <li class="breadcrumb-item">멤버쉽 이력 관리 상세</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-body">
+          <div class="table-cnt mgt-20">
+            <div class="card tb-layout">
+              <div class="card-body form-type">
+                <div class="tb-cnt">
+                  <table class="tb form">
+                    <colgroup>
+                      <col style="width:10.36%;">
+                      <col style="width:22.93%;">
+                      <col style="width:10.36%;">
+                      <col style="width:auto;">
+                      <col style="width:10.36%;">
+                      <col style="width:22.93%;">
+                    </colgroup>
+                    <tbody>
+                    <!-- start: 테이블 셀 컨텐츠 영역 -->
+                    <tr>
+                      <th>회원명/닉네임</th>
+                      <td>김진현 (정후팬)</td>
+                      <th>아이디(이메일)</th>
+                      <td>jhk1232@naver.com</td>
+                      <th>등급 시작일</th>
+                      <td>2021-01-01</td>
+                    </tr>
+                    <tr>
+                      <th>회원번호</th>
+                      <td><a href="#" class="txt-underline">13412</a></td>
+                      <th>휴대폰번호</th>
+                      <td>010-5652-1112</td>
+                      <th>등급 종료일</th>
+                      <td>2021-12-31</td>
+                    </tr>
+                    <tr>
+                      <th>등급</th>
+                      <td colspan="5">
+                        <img src="assets/images/pages/icn-24-24-platinum.svg" alt="platinum" class="mgr-6">
+                        <span class="d-inline-block align-middle">PLATINUM<br>(플래티넘)</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>포인트관리</th>
+                      <td colspan="5">
+                        <div class="inline-form d-flex justify-content-between" style="width:710px;">
+                          <span class="align-self-center">총 <span class="current-num mgr-0">12,928</span> 포인트</span>
+                          <div class="d-inline-block">
+                            <span class="mgr-20">적립</span>
+                            <div class="form-group">
+                              <input type="number" class="form-control rt" placeholder="0" style="width:74px;">
+                            </div>
+                            <span class="mgr-25">P</span>
+                            <span class="mgr-20">차감</span>
+                            <div class="form-group">
+                              <input type="number" class="form-control rt" placeholder="0" style="width:74px;">
+                            </div>
+                            <span style="margin-right:71px;">P</span>
+                            <span>예상 <span class="current-num mgr-0">-</span> 포인트</span>
+                          </div>
+                        </div>
+                        <div class="inline-form d-flex align-items-center mgt-10">
+                          <span style="margin-right:72px;">사유</span>
+                          <div class="form-group">
+                            <select class="form-select" style="width: 614px;">
+                              <option value="">사유 선택</option>
+                              <option value="1">시스템 오류로 인한 정정</option>
+                              <option value="2">비방/욕설/도배 등의 문제</option>
+                              <option value="3">기타 사유</option>
+                            </select>
+                            <!--<input type="text" class="form-control" placeholder="내용을 입력하세요." style="width:614px;">
+                            <p class="hint d-flex justify-content-between">
+                              <span>* 공백 미포함 36자 이내</span>
+                              <span class="mgr-0"><strong class="num">0</strong>/18byte</span>
+                            </p>-->
+                          </div>
+                          <div class="btn-cnt ms-auto mgr-50">
+                            <button type="button" class="btn btn-primary btn-lg disabled">저장하기</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- end: 테이블 셀 컨텐츠 영역 -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-cnt mgt-20">
+            <div class="card filter">
+              <div class="card-body">
+                <div class="form-group mgr-20">
+                  <label for="select1" class="tit">종류</label>
+                  <select id="select1" class="form-select" style="width:150px;">
+                    <option value="">전체</option>
+                    <option value="답변">답변</option>
+                    <option value="미답변">미답변</option>
+                  </select>
+                </div>
+
+                <div class="form-group mgr-20">
+                  <label for="select2" class="tit">문의유형</label>
+                  <select id="select2" class="form-select" style="width:150px;">
+                    <option value="">전체</option>
+                    <option value="이벤트">이벤트</option>
+                    <option value="공지사항">공지사항</option>
+                  </select>
+                </div>
+
+                <div class="form-group mgr-10">
+                  <span class="select-label">적립일시</span>
+                  <div class="input-set">
+                    <input type="text" class="form-control cal" placeholder="2021-11-17 ~ 2021-11-30" id="demo1" style="width:200px">
+                    <button class="ico-btn" type="button"><i class="icon-calendar" data-target="#demo1"></i></button>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <input type="radio" class="btn-check" name="radio" id="radio1" autocomplete="off">
+                  <label class="btn btn-outline-primary " for="radio1">일</label>
+
+                  <input type="radio" class="btn-check" name="radio" id="radio2" autocomplete="off">
+                  <label class="btn btn-outline-primary " for="radio2">주</label>
+
+                  <input type="radio" class="btn-check" name="radio" id="radio3" autocomplete="off">
+                  <label class="btn btn-outline-primary " for="radio3">월</label>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <div class="btn-cnt d-inline-flex float-rt">
+                  <button type="button" class="btn btn-outline-primary btn-ss mgr-10"><i class="icon-rotate-ccw"></i>필터 초기화</button>
+                  <button type="button" class="btn btn-dark btn-ss">조회하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-cnt mgt-20">
+            <div class="card tb-layout">
+              <div class="card-header">
+                <h4 class="card-title">포인트 내역</h4>
+              </div>
+
+              <div class="card-body list-type">
+                <div class="tb-scroll">
+                  <div class="tb-cnt" style="height:510px;">
+                    <table class="tb list type2 mgt-40">
+                      <colgroup>
+                        <col style="width:5%;">
+                        <col style="width:auto;">
+                        <col style="width:15%;">
+                        <col style="width:15%;">
+                        <col style="width:15%;">
+                        <col style="width:15%;">
+                      </colgroup>
+                      <thead>
+                      <tr>
+                        <th scope="col" style="width:5%;">NO</th>
+                        <th scope="col" style="width:auto;">종류</th>
+                        <th scope="col" style="width:15%;">적립포인트</th>
+                        <th scope="col" style="width:15%;">차감포인트</th>
+                        <th scope="col" style="width:15%;">누적포인트</th>
+                        <th scope="col" style="width:15%;">적립일시</th>
+                      </tr>
+                      </thead>
+                      <tbody class="tb-scroll">
+                      <tr>
+                        <td>10</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>관리자 부여 적립 (오류로 인한 정정)</td>
+                        <td>+ 1,000P</td>
+                        <td>- 0P</td>
+                        <td>12,928P</td>
+                        <td>2021-11-12 14:22</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="pagination-cnt mgt-30 mgb-10">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item next"><a class="page-link" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card-footer border-top-0">
+                <div class="btn-cnt">
+                  <button type="button" class="btn btn-outline-primary btn-lg"><i class="icon-chevron-left"></i><span>목록으로</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

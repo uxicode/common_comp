@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, height=device-height”, viewport-fit=cover">
+  <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+  <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>A.1.2</title>
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+  <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+  <div class="container">
+    <div class="popup">
+      <div class="modal-dim"></div>
+      <div class="modal" style="display: block" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width:1280px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">회원 찾기</h5>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="modal-body" style="padding: 32px 24px;">
+              <div class="row">
+                <div class="col-6 bd-right">
+                  <div class="d-flex justify-content-between">
+                    <div class="form-group">
+                      <select id="select2" class="form-select" style="width:120px;">
+                        <option value="">전체</option>
+                        <option value="회원명">회원명</option>
+                        <option value="아이디">아이디</option>
+                        <option value="휴대폰번호">휴대폰번호</option>
+                        <option value="회원번호">회원번호</option>
+                      </select>
+                    </div>
+                    <div class="input-group" style="width:469px;">
+                      <input type="text" class="form-control" placeholder="검색어를 입력하세요">
+                      <button class="btn btn-dark" type="button">검색</button>
+                    </div>
+                  </div>
+
+                  <div class="table-cnt">
+                    <p class="mgt-33">선택된 인원 <span class="current-num">3</span> 명</p>
+                    <div class="card border-radius mgt-16">
+                      <div class="card-body list-type">
+                        <div class="tb-scroll">
+                          <div class="tb-cnt" style="height:492px;">
+                            <table class="tb list type2 mgt-35">
+                              <colgroup>
+                                <col style="width:10%">
+                                <col style="width:20%">
+                                <col style="width:auto">
+                                <col style="width:20%">
+                                <col style="width:15%">
+                              <thead>
+                              <tr>
+                                <th scope="col" style="width:10%;">
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </th>
+                                <th scope="col" style="width:20%;">회원명/닉네임</th>
+                                <th scope="col" style="width:auto;">아이디(이메일)</th>
+                                <th scope="col" style="width:20%;">휴대폰번호</th>
+                                <th scope="col" style="width:15%;">회원번호</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <!-- start: 테이블 셀 컨텐츠 영역 -->
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <!-- end: 테이블 셀 컨텐츠 영역 -->
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="pagination justify-content-center mgt-30">
+                    <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item next"><a class="page-link" href="#"></a></li>
+                  </ul>
+
+                </div>
+
+                <div class="col-6 mt-auto">
+                  <div class="table-cnt">
+                    <div class="card border-radius">
+                      <div class="card-body list-type">
+                        <div class="tb-scroll">
+                          <div class="tb-cnt" style="height:492px;">
+                            <table class="tb list type2 mgt-35">
+                              <colgroup>
+                                <col style="width:10%">
+                                <col style="width:20%">
+                                <col style="width:auto">
+                                <col style="width:20%">
+                                <col style="width:15%">
+                              <thead>
+                              <tr>
+                                <th scope="col" style="width:10%;">
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </th>
+                                <th scope="col" style="width:20%;">회원명/닉네임</th>
+                                <th scope="col" style="width:auto;">아이디(이메일)</th>
+                                <th scope="col" style="width:20%;">휴대폰번호</th>
+                                <th scope="col" style="width:15%;">회원번호</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <!-- start: 테이블 셀 컨텐츠 영역 -->
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                                  </div>
+                                </td>
+                                <td>
+                                  <p>김진현</p>
+                                  <p class="txt-gray">(정후팬)</p>
+                                </td>
+                                <td>jhk1232@naver.com</td>
+                                <td>010-5652-1112</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="txt-underline">32162</a>
+                                </td>
+                              </tr>
+                              <!-- end: 테이블 셀 컨텐츠 영역 -->
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="pagination justify-content-center mgt-30">
+                    <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item next"><a class="page-link" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer border-top-0 linear-gradient">
+              <div class="btn-cnt d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-primary btn-lg-s">취소</button>
+                <button type="button" class="btn btn-primary btn-lg-s">선택완료</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

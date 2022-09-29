@@ -1,0 +1,247 @@
+.event-info {
+  height: 196px;
+  border: solid 1px #e4e4e4;
+  background-color: #fdfdfd;
+
+  .event-left, .event-right {
+    height: 100%;
+    padding: 20px 24px;
+    vertical-align: top;
+  }
+
+  .event-left {
+    width: 367px;
+    border-right: solid 1px #e4e4e4;
+    background-color: #f1f0fe;
+
+    &.live {background-color: #f0fdff;}
+
+    .tit {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5e5873;
+    }
+    .desc {
+      font-weight: 500;
+      color: #525252;
+    }
+  }
+  .event-right {
+    width: auto;
+
+    .tit {
+      font-size: 12px;
+      font-weight: 500;
+      color: #7367f0;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0 20px;
+
+      tr:last-child {vertical-align: top;}
+
+      th, td {
+        font-weight: 500;
+        color: #525252;
+      }
+    }
+  }
+}
+
+.msg-nodata {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: center;
+  color: #525252;
+}
+
+.gift-cnt {
+  width: 250px;
+  height: 278px;
+  border-radius: 8px;
+  border: solid 1px #e4e4e4;
+  background-color: #fff;
+
+  &:hover {border-color: #7367f0;}
+
+  .gift-top, .gift-btm {
+    padding: 15px;
+
+    .num-cnt {
+      font-size: 12px;
+    }
+  }
+
+  .gift-top {
+    border-bottom: solid 1px #e4e4e4;
+
+    .img-cnt {
+      margin: 21px auto 0;
+      width: 180px;
+      height: 108px;
+      padding: 6px 10px 7px 11px;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+  }
+  .gift-btm {
+    .desc {
+      .txt-underline {
+        display: block;
+        width: fit-content;
+        font-weight: 500;
+      }
+      .date {
+        font-size: 11px;
+        font-weight: 500;
+      }
+      .txt-underline {font-size: 12px;}
+    }
+  }
+}
+
+.txt-red {color: #ea5455;}
+.txt-gray {color: #b9b9c3;}
+.txt-gray.type2 {color: #b3b1bd !important;}
+.total-num{color: #82868b;}
+.current-num{color:#7367f0; font-weight: bold;}
+
+
+.top-cnt {
+  display: flex;
+
+  .status {
+    display: inline-flex;
+    align-self: end;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #6e6b7b;
+  }
+
+  .form-group, .input-group {display: inline-flex;}
+
+  .form-group {
+    margin-right: 20px;
+
+    &:first-of-type {margin-left: auto;}
+
+    .select-label {
+      margin-right: 10px;
+      align-self: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #5e5873;
+    }
+
+    .dropdown-options {min-height: 38px;}
+  }
+
+  .input-group {
+    button {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+
+// ksj: table 하단 linear-gradient - card-footer 또는 modal-footer에 추가
+.linear-gradient:before {
+  content: '';
+  @include pos-abs($top: -20px, $left: 0);
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0), rgba(0, 0, 0, 0.1));
+}
+
+/* 이벤트 혜택 상세유형 text */
+.point-detail-txt {
+  color: #8e8e8e;
+
+  .total-num {
+    color: #525252;
+    font-weight: 500;
+    padding: 0 3px;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin-right: 21px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: -12px;
+      width: 1px ;
+      height: 14px;
+      background-color: #ebe9f1;
+    }
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+.img-cnt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.writer-desc {
+  position: relative;
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 9px;
+      width: 1px;
+      height: 14px;
+      background-color: #ebe9f1;
+    }
+
+    &:last-child:before {
+      content: none;
+    }
+  }
+}
+
+
+.posting-num, .comment-num {
+  font-weight: normal;
+}
+
+
+//404 page
+.no-page-cnt{
+  margin: 100px auto 0 auto ;
+  width: 700px;
+  text-align: center;
+  > p {
+    margin: 0 auto;
+    &:first-child {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.4px;
+      padding-bottom: 8px;
+    }
+    &:nth-child(2){
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: -0.2px;
+      color: #6e6b7b;
+      margin-bottom: 30px;
+    }
+  }
+}

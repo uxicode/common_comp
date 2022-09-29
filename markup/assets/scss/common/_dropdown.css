@@ -1,0 +1,20 @@
+.dropdown-toggle.btn-outline-primary::after {
+  background-image: url("../images/common/dropdown-arrow-primary.svg");
+}
+.dropdown-toggle.btn-outline-secondary::after {
+  background-image: url("../images/common/dropdown-arrow-secondary.svg");
+}
+.dropdown-toggle.btn-outline-success::after {
+  background-image: url("../images/common/dropdown-arrow-success.svg");
+}
+.dropdown-toggle.btn-outline-danger::after {
+  background-image: url("../images/common/dropdown-arrow-danger.svg");
+}
+.dropdown-toggle.btn-outline-warning::after {
+  background-image: url("../images/common/dropdown-arrow-warning.svg");
+}
+.dropdown-toggle.btn-outline-info::after {
+  background-image: url("../images/common/dropdown-arrow-info.svg");
+}
+
+/*# sourceMappingURL=dropdown.css.map */

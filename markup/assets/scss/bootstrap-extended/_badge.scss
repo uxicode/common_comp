@@ -1,0 +1,136 @@
+// Badge
+
+.badge {
+  &[class*='bg-'] {
+    [class*='icon-'] {
+      line-height: 1;
+    }
+
+    a {
+      color: $white;
+    }
+
+    // badge dropdown alignment
+    .dropdown-toggle,
+    &.dropdown-toggle {
+      span,
+      i,
+      svg {
+        vertical-align: text-top;
+      }
+      i,
+      svg {
+        padding-left: 0.2rem;
+      }
+      &::after {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 1rem;
+      }
+    }
+    .dropdown-menu {
+      a {
+        color: $dropdown-color;
+      }
+    }
+  }
+
+  i,
+  svg {
+    height: 12px;
+    width: 11px;
+    font-size: 12px;
+    stroke-width: 3;
+    vertical-align: top;
+  }
+
+  // square badge
+  &.badge-square {
+    border-radius: 0;
+  }
+
+  // badge-up
+  // to align badge over any element
+  &.badge-up {
+    position: absolute;
+    top: -11px;
+    right: -9px;
+    min-width: 1.429rem;
+    min-height: 1.429rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.786rem;
+    line-height: 0.786;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    &.badge-sm {
+      top: -0.5rem;
+      right: -0.5rem;
+    }
+  }
+}
+
+// For fullscreen search
+.badge-icon {
+  i,
+  svg {
+    font-size: 100%;
+    margin-right: 5px;
+  }
+}
+
+// badge dropup pointer
+.dropup {
+  .badge {
+    cursor: pointer;
+  }
+}
+
+
+
+/* ================ badges custom ================ */
+
+.bg-primary.badge-glow{box-shadow: 0px 0px 10px #7367f0;}
+.bg-secondary.badge-glow {box-shadow: 0px 0px 10px #82868b;}
+.bg-success.badge-glow {box-shadow: 0px 0px 10px #28c76f;}
+.bg-danger.badge-glow {box-shadow: 0px 0px 10px #ea5455;}
+.bg-warning.badge-glow {box-shadow: 0px 0px 10px #ff9f43;}
+.bg-info.badge-glow {box-shadow: 0px 0px 10px #00cfe8;}
+.bg-dark.badge-glow {box-shadow: 0px 0px 10px #4b4b4b;}
+
+
+
+.badge{
+  &.badge-light-primary {
+    background-color: rgba(115, 103, 240, 0.12);
+    color: #7367f0 !important;
+  }
+  &.badge-light-secondary {
+    background-color: rgba(130, 134, 139, 0.12);
+    color: #82868b !important;
+  }
+  &.badge-light-success {
+    background-color: rgba(40, 199, 111, 0.12);
+    color: #28c76f !important;
+  }
+  &.badge-light-danger {
+    background-color: rgba(234, 84, 85, 0.12);
+    color: #ea5455 !important;
+  }
+  &.badge-light-warning {
+    background-color: rgba(255, 159, 67, 0.12);
+    color: #ff9f43 !important;
+  }
+  &.badge-light-info {
+    background-color: rgba(0, 207, 232, 0.12);
+    color: #00cfe8 !important;
+  }
+  &.badge-light-dark {
+    background-color: rgba(75, 75, 75, 0.12);
+    color: #4b4b4b !important;
+  }
+}
+
+

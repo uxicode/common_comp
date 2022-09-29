@@ -1,0 +1,93 @@
+/* slide-container */
+.slide-cnt {
+  position: relative;
+
+  .slide-view {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+
+    &:after {
+      width: 100px;
+      height: 100%;
+      content: "";
+      position: absolute;
+      display: block;
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      top: 3px;
+      right: -28px;
+      z-index: 1;
+      background-color: #f6f7fa;
+    }
+  }
+
+  .prev-btn, .next-btn {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    > i {font-size: 24px;}
+  }
+  .prev-btn {left: 0;}
+  .next-btn {right: 0;}
+}
+
+
+.slide-wrap {
+  position: relative;
+  width: 300%;
+
+  .item {
+    float: left;
+    margin-right: 10px;
+
+    /* slide gift hover */
+    &:hover .card-body.slide {
+      border: 1px solid #7367f0;
+      border-radius: 8px;
+      padding: 14px;
+      color: #525252;
+    }
+  }
+}
+
+
+.slide-contents {
+  position: relative;
+
+  .img-cnt {
+    width: 240px;
+    float: left;
+    > img {width: 100%}
+  }
+
+  .txt-cnt {
+    position: relative;
+    width: 260px;
+    float: left;
+    margin-left: 15px;
+
+    .tit-txt {
+      font-size: 14px;
+      font-weight: bold;
+      color: #6e6b7b;
+    }
+
+    .detail {
+      line-height: 22px;
+      padding: 5px 0 12px 0;
+      font-size: 12px;
+    }
+
+    .num-cnt {
+      position: absolute;
+      bottom: 0;
+      right: -3px;
+      font-size: 12px;
+    }
+  }
+}
+
+.card-body.slide {
+  padding: 15px;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description"
+          content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+          content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>CM.1_1</title>
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+    <header>
+        <nav class="header-navbar navbar navbar-expand-lg">
+            <div class="navbar-container d-flex content">
+                    <!-- start: 20220401 -->
+              <!-- <div class="bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav bookmark-icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="badge bg-info">LIVE!</span>
+                                <i class="icon-radio"></i>
+                                <span class="tit">경기 라이브</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="badge bg-danger">1</span>
+                                <i class="icon-gift"></i>
+                                <span class="tit">이벤트 마감</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="badge bg-danger">N</span>
+                                <i class="icon-headphones"></i>
+                                <span class="tit">1:1 문의</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>-->
+              <!-- end: 20220401 -->
+                <ul class="nav navbar-nav align-items-center ms-auto">
+                    <li class="nav-item dropdown dropdown-user">
+                        <a class="nav-link dropdown-toggle dropdown-user-link">
+                            <div class="user-nav d-sm-flex">
+                                <span class="user-name fw-bold">Heroesbase</span>
+                                <span class="user-status fw-light">슈퍼운영자</span>
+                            </div>
+                            <i class="icon-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="user-menu">
+                <li><a href="#"><i class="icon-lock"></i><span class="item fw-bold">비밀번호 변경</span></a></li>
+                <li><a href="#"><i class="icon-log-out"></i><span class="item fw-bold">로그아웃</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="aside-menu menu-fixed menu-dark">
+            <div class="aside-header">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="img-cnt">
+                            <img src="./assets/images/common/logo.png" alt="">
+                        </span>
+                        <p class="logo-tit">KiwoomHeroes<br> APP Admin</p>
+                    </a>
+                </h1>
+            </div>
+            <div class="aside-content">
+                <ul class="navigation">
+                    <li class="nav-item">
+                        <ul>
+                            <li><a href="#" class="aside-main-tit"><i class="icon-home"></i><span
+                                    class="aside-tit">대시보드</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">회원 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-user"></i><span class="aside-tit">회원정보 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">멤버쉽 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-users"></i><span class="aside-tit">멤버쉽 이력 관리</span></a></li>
+                            <li><a href="#"><i class="icon-award"></i><span class="aside-tit">등급/포인트 관리</span></a></li>
+                            <li><a href="#"><i class="icon-star"></i><span class="aside-tit">멤버쉽 혜택 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">배너관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-copy"></i><span class="aside-tit">메인배너 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">이벤트 관리</p>
+                        <ul>
+                            <li class="active"><a href="#"><i class="icon-radio"></i><span
+                                    class="aside-tit">라이브 이벤트</span></a></li>
+                            <li><a href="#"><i class="icon-general-event"></i><span class="aside-tit">일반 이벤트</span></a>
+                            </li>
+                            <li><a href="#"><i class="icon-gift"></i><span class="aside-tit">경품 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">1:1 문의</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-headphones"></i><span class="aside-tit">1:1 문의</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">직관</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-star"></i><span class="aside-tit">직관 승요 관리</span></a></li>
+                            <li><a href="#"><i class="icon-check-circle"></i><span
+                                    class="aside-tit">체크인 내역 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">커뮤니티 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-clock"></i><span class="aside-tit">타임라인 관리</span></a></li>
+                            <li><a href="#"><i class="icon-clipboard"></i><span class="aside-tit">펜게시판 관리</span></a>
+                            </li>
+                            <li><a href="#"><i class="icon-alert-triangle"></i><span class="aside-tit">신고글 관리</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">알림 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-bell"></i><span class="aside-tit">Push 관리</span></a></li>
+                            <li><a href="#"><i class="icon-mail"></i><span class="aside-tit">Email 관리</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-item-tit">앱 설정</p>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="icon-help-circle"></i><span
+                                        class="aside-tit">자주묻는질문 관리</span><span class="more-btn"><i
+                                        class="icon-chevron-right float-rt mgr-0"></i></span></a>
+                                <ul class="sub-content" style="display: block">
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="icon-layers"></i><span class="aside-tit">버전 관리</span></a></li>
+                            <li><a href="#"><i class="icon-file-text"></i><span class="aside-tit">약관 관리</span></a></li>
+                            <li><a href="#"><i class="icon-notice"></i><span class="aside-tit">공지사항 관리</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="nav-item-tit">관리자 관리</p>
+                        <ul>
+                            <li><a href="#"><i class="icon-settings"></i><span class="aside-tit">관리자 관리</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents-wrap">
+            <div class="contents">
+                <div class="content-header">
+                    <div class="content-header-left col-md-9 col-12 mb-2">
+                        <h2 class="content-header-title float-start">타임라인 관리</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">커뮤니티 관리</li>
+                                <li class="breadcrumb-item">타임라인 관리</li>
+                                <li class="breadcrumb-item">구단 소식</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-body">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active">구단 소식</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">뉴스</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">유튜브</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">사진</a></li>
+                    </ul>
+                    <div class="table-cnt mgt-20">
+                        <div class="card tb-layout">
+                            <div class="top-cnt m-1 align-items-center">
+                                <p>총 <span class="current-num">1,200</span>개</p>
+                                <div class="form-group ms-auto mgr-10">
+                                    <span class="select-label">앱 게시 여부</span>
+                                    <select class="form-select" style="width:150px;">
+                                        <option>전체</option>
+                                        <option>게시</option>
+                                        <option>미게시</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" style="width:326px;">
+                                    <select class="form-select" style="width: 32%;">
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                    </select>
+                                    <input type="text" placeholder="검색어를 입력하세요" class="form-control" style="width: 68%;">
+                                </div>
+                                <button type="button" class="btn btn-dark mgl-10">검색</button>
+                                <button type="button" class="btn btn-outline-primary btn-ss mgl-10"><i class="icon-rotate-ccw"></i>필터 초기화</button>
+                            </div>
+                            <div class="card-body list-type">
+                                <div class="tb-cnt" style="height: 785px;">
+                                    <table class="tb list">
+                                        <colgroup>
+                                            <col style="width:8%">
+                                            <col style="width:auto">
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">등록일</th>
+                                            <th scope="col">조회수</th>
+                                            <th scope="col">앱 게시 여부</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- start: 테이블 셀 컨텐츠 영역 -->
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021 고급형 스페셜 모자</a>
+                                            </td>
+                                            <td>2021-11-12</td>
+
+                                            <td><span class="views">0</span></td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" checked="" class="form-check-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021 고급형 스페셜 모자</a>
+                                            </td>
+                                            <td>2021-11-12</td>
+
+                                            <td><span class="views">0</span></td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" checked="" class="form-check-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="paused">
+                                            <td><span>2</span></td>
+                                            <td class="text-start">
+                                                <a href="" class="txt-underline">2021 고급형 스페셜 모자</a>
+                                            </td>
+                                            <td>2021-11-12</td>
+                                            <td><span class="views">0</span></td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <!-- end: 테이블 셀 컨텐츠 영역 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer pdt-30 pdb-30">
+                                <div class="pagination-cnt">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item next"><a class="page-link" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

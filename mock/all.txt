@@ -1,0 +1,592 @@
+// /api/admin/auth/login - { "id": "heroes", "password": "test" }
+{
+  "grantType": "Bearer",
+  "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6WyJldmVudGl0ZW0iLCJjaGVja2ludmljdG9yeSIsIm1hbmFnZXIiLCJjcm93ZCIsImJhbm5lciIsImJvYXJkcmVwb3J0Iiwibm90aWVtYWlsIiwiZ3JhZGVoaXN0b3J5IiwiZXZlbnRsaXZlIiwiZXZlbnRnZW5lcmFsIiwiYm9hcmRmYW4iLCJhcHBub3RpY2UiLCJtYWluaW1hZ2UiLCJhcHBmYXEiLCJjaGVja2luIiwibm90aXB1c2giLCJhcHB0ZXJtcyIsImFwcHZlc2lvbiIsImdyYWRlaW5mbyIsImNvbnRhY3QiLCJtZW1iZXIiLCJib2FyZHRpbWVsaW5lIl0sInN1YiI6IjQzIiwiaWQiOiJoZXJvZXMiLCJpYWQiOjExNiwiaWF0IjoxNjUyNDEwNDE4LCJleHAiOjE2NTI0MTc2MTh9.56OGt1GfRyk5_ep8HgB1qy6bJlos1abD28xKq1ctUX2qPMtnfhNqc8gglcVXMFxAy_pUgQbe-FbM_zKNjfF6RQ",
+  "accessTokenExpiresIn": 7200,
+  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYWQiOjExNiwiaWF0IjoxNjUyNDEwNDE4LCJleHAiOjE2NjAxODY0MTh9.TlxldJqgTYsEs-FnMiQqtjgi2nICBt87THXf_cJCo4V6bphnBpccg92yP59Oj7RQUxuQ_JW6OG-0FcVcvZzEjQ",
+  "refreshTokenExpiresIn": 7776000
+}
+
+// /api/admin/auth/login-token  - { "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYWQiOjExNiwiaWF0IjoxNjUyNDEwNDE4LCJleHAiOjE2NjAxODY0MTh9.TlxldJqgTYsEs-FnMiQqtjgi2nICBt87THXf_cJCo4V6bphnBpccg92yP59Oj7RQUxuQ_JW6OG-0FcVcvZzEjQ" }
+{
+  "grantType": "Bearer",
+  "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6WyJldmVudGl0ZW0iLCJjaGVja2ludmljdG9yeSIsIm1hbmFnZXIiLCJjcm93ZCIsImJhbm5lciIsImJvYXJkcmVwb3J0Iiwibm90aWVtYWlsIiwiZ3JhZGVoaXN0b3J5IiwiZXZlbnRsaXZlIiwiZXZlbnRnZW5lcmFsIiwiYm9hcmRmYW4iLCJhcHBub3RpY2UiLCJtYWluaW1hZ2UiLCJhcHBmYXEiLCJjaGVja2luIiwibm90aXB1c2giLCJhcHB0ZXJtcyIsImFwcHZlc2lvbiIsImdyYWRlaW5mbyIsImNvbnRhY3QiLCJtZW1iZXIiLCJib2FyZHRpbWVsaW5lIl0sInN1YiI6IjQzIiwiaWQiOiJoZXJvZXMiLCJpYWQiOjYwMywiaWF0IjoxNjUyNDEwNjQyLCJleHAiOjE2NTI0MTc4NDJ9.2iUcEd3uiikrzgOaPTu0uAOxAAC9uDCsInVUUjpWhbtrBkUnPonmxAUYu7TOOjI_Z-r-kp3DA68TzPb88xAj_g",
+  "accessTokenExpiresIn": 7200,
+  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYWQiOjYwMywiaWF0IjoxNjUyNDEwNjQyLCJleHAiOjE2NjAxODY2NDJ9.yV24ExtTlhNJceFrFcDZmZcqTuqeELYSxbH1Oe-uheOB9aKN5D7-4dGqNN3xcZQ5N0kYBPtxo1ZcfWmsivvu6A",
+  "refreshTokenExpiresIn": 7776000
+}
+
+// /api/admin/user/me
+{
+  "userSeq": 43,
+  "id": "heroes",
+  "name": "관리자",
+  "email": "",
+  "isSystem": false,
+  "authorities": [
+    "eventitem",
+    "checkinvictory",
+    "manager",
+    "crowd",
+    "banner",
+    "boardreport",
+    "notiemail",
+    "gradehistory",
+    "eventlive",
+    "eventgeneral",
+    "boardfan",
+    "appnotice",
+    "mainimage",
+    "appfaq",
+    "checkin",
+    "notipush",
+    "appterms",
+    "appvesion",
+    "gradeinfo",
+    "contact",
+    "member",
+    "boardtimeline"
+  ],
+  "menus": [
+    {
+      "name": "회원 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "member",
+          "name": "회원정보 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "등급 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "gradeinfo",
+          "name": "등급/포인트 관리",
+          "isView": true
+        },
+        {
+          "id": "gradehistory",
+          "name": "멤버쉽 이력 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "배너 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "banner",
+          "name": "메인배너 관리",
+          "isView": true
+        },
+        {
+          "id": "mainimage",
+          "name": "메인이미지 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "이벤트 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "eventlive",
+          "name": "라이브 이벤트",
+          "isView": true
+        },
+        {
+          "id": "eventgeneral",
+          "name": "일반 이벤트",
+          "isView": true
+        },
+        {
+          "id": "eventitem",
+          "name": "경품 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "1:1 문의",
+      "isView": true,
+      "menus": [
+        {
+          "id": "contact",
+          "name": "1:1 문의",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "직관",
+      "isView": true,
+      "menus": [
+        {
+          "id": "checkinvictory",
+          "name": "직관 승요 관리",
+          "isView": true
+        },
+        {
+          "id": "checkin",
+          "name": "체크인 내역 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "커뮤니티 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "boardtimeline",
+          "name": "타임라인 관리",
+          "isView": true
+        },
+        {
+          "id": "boardfan",
+          "name": "팬게시판 관리",
+          "isView": true
+        },
+        {
+          "id": "boardreport",
+          "name": "신고글 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "알림 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "notipush",
+          "name": "Push 관리",
+          "isView": true
+        },
+        {
+          "id": "notiemail",
+          "name": "Email 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "앱 설정",
+      "isView": true,
+      "menus": [
+        {
+          "id": "appfaq",
+          "name": "자주묻는질문 관리",
+          "isView": true
+        },
+        {
+          "id": "appvesion",
+          "name": "버전 관리",
+          "isView": true
+        },
+        {
+          "id": "appterms",
+          "name": "약관 관리",
+          "isView": true
+        },
+        {
+          "id": "appnotice",
+          "name": "공지사항 관리",
+          "isView": true
+        }
+      ]
+    },
+    {
+      "name": "관리자 관리",
+      "isView": true,
+      "menus": [
+        {
+          "id": "manager",
+          "name": "관리자 관리",
+          "isView": true
+        },
+        {
+          "id": "crowd",
+          "name": "혼잡도 관리",
+          "isView": true
+        }
+      ]
+    }
+  ],
+  "createdAt": "2021-12-31T10:02:21"
+}
+
+
+// /api/admin/member
+
+{
+  "pageCurrent": 1,
+  "pageStart": 1,
+  "pageEnd": 10,
+  "pageLast": 406,
+  "pageSize": 20,
+  "contentCount": 8115,
+  "contents": [
+    {
+      "memberSeq": 9655,
+      "id": "khb@inition.kr",
+      "name": "김현배",
+      "nickname": "어쭈쭈",
+      "birthdate": "19841224",
+      "age": 37,
+      "phone": "01054451254",
+      "gender": "M",
+      "snsType": "A",
+      "createdAt": "2022-05-13T11:30:05",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 0
+    },
+    {
+      "memberSeq": 9654,
+      "id": "kim206gh@naver.com",
+      "name": "김영수",
+      "nickname": "히인",
+      "birthdate": "19950223",
+      "age": 27,
+      "phone": "01074414848",
+      "gender": "M",
+      "snsType": "A",
+      "createdAt": "2022-05-13T10:57:22",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9653,
+      "id": "dev@inition.kr",
+      "name": "손승곤",
+      "nickname": "sksksksk",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "A",
+      "createdAt": "2022-05-12T16:33:00",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9652,
+      "id": "selfishluv2@naver.com",
+      "name": "손승곤",
+      "nickname": "손손",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "N",
+      "createdAt": "2022-05-12T15:41:44",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9651,
+      "id": "dev@inition.kr",
+      "name": "손승곤",
+      "nickname": "sgsgsg",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "A",
+      "createdAt": "2022-05-12T15:15:15",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9649,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "sg",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-04T12:01:29",
+      "memberStatusType": "QU",
+      "memberGradeType": "C01",
+      "point": 39
+    },
+    {
+      "memberSeq": 9648,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-04T11:32:05",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9646,
+      "id": "khb@inition.kr",
+      "name": "Thats no No",
+      "nickname": "곰소드",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-03T17:10:09",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 10
+    },
+    {
+      "memberSeq": 9645,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-03T16:15:51",
+      "memberStatusType": "QU",
+      "memberGradeType": "C01",
+      "point": 10
+    },
+    {
+      "memberSeq": 9644,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-03T16:12:10",
+      "memberStatusType": "QU",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9643,
+      "id": "khb@inition.kr",
+      "name": "WA WA WA WA",
+      "nickname": "곰곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-03T16:09:09",
+      "memberStatusType": "QU",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9642,
+      "id": "sgson@inition.kr",
+      "name": "WA WA WA WA",
+      "nickname": "손드",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-05-03T15:55:08",
+      "memberStatusType": "QU",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9641,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "G",
+      "createdAt": "2022-04-28T15:00:51",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9640,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-04-28T14:58:13",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 0
+    },
+    {
+      "memberSeq": 9639,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-04-27T11:52:01",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 5
+    },
+    {
+      "memberSeq": 9637,
+      "id": "jihoonl@gmail.com",
+      "name": "이지훈",
+      "nickname": "이지훈",
+      "birthdate": "19760101",
+      "age": 46,
+      "phone": "01091971894",
+      "gender": "M",
+      "snsType": "K",
+      "createdAt": "2022-04-17T13:31:39",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 15
+    },
+    {
+      "memberSeq": 9636,
+      "id": "iyson@inition.kr",
+      "name": "손인엽",
+      "nickname": "소이여",
+      "birthdate": "19850319",
+      "age": 37,
+      "phone": "01073359881",
+      "gender": "M",
+      "snsType": "X",
+      "createdAt": "2022-04-15T10:31:26",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 11
+    },
+    {
+      "memberSeq": 9635,
+      "id": "sgson@inition.kr",
+      "name": "손승곤",
+      "nickname": "곰",
+      "birthdate": "19930828",
+      "age": 28,
+      "phone": "01067640494",
+      "gender": "M",
+      "snsType": "A",
+      "createdAt": "2022-04-14T21:56:27",
+      "memberStatusType": "FO",
+      "memberGradeType": "C01",
+      "point": 0
+    },
+    {
+      "memberSeq": 9634,
+      "id": "jhkim@inition.kr",
+      "name": "김진현",
+      "nickname": "genekim",
+      "birthdate": "19940401",
+      "age": 28,
+      "phone": "01040885806",
+      "gender": "M",
+      "snsType": "N",
+      "createdAt": "2022-04-14T18:16:18",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 30
+    },
+    {
+      "memberSeq": 9633,
+      "id": "5nrysn9nk9@privaterelay.appleid.com",
+      "name": "하정민",
+      "nickname": "Mina",
+      "birthdate": "19950420",
+      "age": 27,
+      "phone": "01073572820",
+      "gender": "F",
+      "snsType": "A",
+      "createdAt": "2022-04-14T18:16:06",
+      "memberStatusType": "AC",
+      "memberGradeType": "C01",
+      "point": 0
+    }
+  ]
+}
+
+
+
+// /api/admin/member/9655
+{
+  "memberSeq": 9655,
+  "id": "khb@inition.kr",
+  "name": "김현배",
+  "nickname": "어쭈쭈",
+  "birthdate": "19841224",
+  "age": 37,
+  "phone": "01054451254",
+  "gender": "M",
+  "snsType": "A",
+  "profilePath": "",
+  "zipcode": "",
+  "address": "",
+  "addressDetail": "",
+  "createdAt": "2022-05-13T11:30:05",
+  "lastLoginAt": "2022-05-13T10:47:55",
+  "memberStatusType": "AC",
+  "memberGradeType": "C01",
+  "point": 0,
+  "reportPostCount": 0,
+  "reportReplyCount": 0,
+  "memo": "",
+  "memberPostCount": 0,
+  "memberGeneralEventApplyCount": 0,
+  "memberLiveEventApplyCount": 0,
+  "memberCheckinCount": 0,
+  "notifications": [
+    {
+      "notificationType": "E",
+      "isAgreement": true
+    },
+    {
+      "notificationType": "M",
+      "isAgreement": false
+    },
+    {
+      "notificationType": "P",
+      "isAgreement": true
+    },
+    {
+      "notificationType": "S",
+      "isAgreement": true
+    }
+  ],
+  "agreements": [
+    {
+      "termsType": "M",
+      "isAgreement": true
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: none;
+}
+
+/* ================ btn custom ================ */
+.btn-round {
+  border-radius: 50px;
+}
+
+.btn-success, .btn-warning, .btn-info {
+  color: #fff !important;
+}
+
+/*btn outline*/
+.btn-outline-primary:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(115, 103, 240, 0.04);
+  color: #7367f0;
+}
+.btn-outline-secondary:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(130, 134, 139, 0.04);
+  color: #82868b;
+}
+.btn-outline-success:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(40, 199, 111, 0.04);
+  color: #28c76f;
+}
+.btn-outline-danger:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(234, 84, 85, 0.04);
+  color: #ea5455;
+}
+.btn-outline-warning:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(255, 159, 67, 0.04);
+  color: #ff9f43;
+}
+.btn-outline-info:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(0, 207, 232, 0.04);
+  color: #00cfe8;
+}
+.btn-outline-dark:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(75, 75, 75, 0.04);
+  color: #4b4b4b;
+}
+
+/*btn flat*/
+.btn-flat {
+  background-color: transparent;
+}
+.btn-flat-primary {
+  color: #7367f0;
+}
+.btn-flat-primary:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(115, 103, 240, 0.12);
+}
+.btn-flat-secondary {
+  color: #82868b;
+}
+.btn-flat-secondary:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(130, 134, 139, 0.12);
+}
+.btn-flat-success {
+  background-color: transparent;
+  color: #28c76f;
+}
+.btn-flat-success:hover {
+  color: #28c76f;
+}
+.btn-flat-success:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(40, 199, 111, 0.12);
+}
+.btn-flat-danger {
+  background-color: transparent;
+  color: #ea5455;
+}
+.btn-flat-danger:hover {
+  color: #ea5455;
+}
+.btn-flat-danger:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(234, 84, 85, 0.12);
+}
+.btn-flat-warning {
+  background-color: transparent;
+  color: #ff9f43;
+}
+.btn-flat-warning:hover {
+  color: #ff9f43;
+}
+.btn-flat-warning:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(255, 159, 67, 0.12);
+}
+.btn-flat-info {
+  background-color: transparent;
+  color: #00cfe8;
+}
+.btn-flat-info:hover {
+  color: #00cfe8;
+}
+.btn-flat-info:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(0, 207, 232, 0.12);
+}
+.btn-flat-dark {
+  background-color: transparent;
+  color: #4b4b4b;
+}
+.btn-flat-dark:hover {
+  color: #4b4b4b;
+}
+.btn-flat-dark:hover:not(.disabled):not(:disabled) {
+  background-color: rgba(75, 75, 75, 0.12);
+}
+
+.btn:focus, .btn.focus, .btn:active, .btn.active {
+  outline: none;
+  box-shadow: none;
+}
+
+/*btn checkbox & radio group*/
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: #7367f0;
+  background-color: rgba(115, 103, 240, 0.2) !important;
+}
+
+.btn-lg {
+  padding: 1.1rem 2rem 1rem 2rem;
+}
+
+.btn-close {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.75rem;
+  height: 0.75rem;
+  padding: 0.25em 0.25em;
+  color: currentColor;
+  background: none;
+  border: 0;
+  border-radius: 0.357rem;
+  opacity: 0.4;
+}
+.btn-close:after {
+  font-family: "icomoon" !important;
+  content: "\e8f6";
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+}
+
+/* ================ badge custom ================ */
+.badge {
+  min-width: 82px;
+  font-size: 80% !important;
+}
+
+/*# sourceMappingURL=button.css.map */

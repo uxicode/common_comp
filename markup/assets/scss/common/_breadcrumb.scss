@@ -1,0 +1,30 @@
+.content-header-title{
+  font-weight: 700;
+}
+/* start: breadcrumb */
+.breadcrumb {
+  position:relative;
+  padding-left: 40px !important;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #b3b1bd;
+  margin-right: 15px;
+
+  &:before {
+    content: '';
+    @include pos-abs($top: 2px, $left: 20px);
+    width: 1px;
+    height: 26px;
+    background-color: #ebe9f1;
+  }
+
+  .breadcrumb-item {
+    &:last-child {color: #525252;}
+    a {color: inherit;}
+  }
+  .breadcrumb-item + .breadcrumb-item {padding-left: 11px;}
+
+  &:not([class*=breadcrumb-]) .breadcrumb-item + .breadcrumb-item:before {margin-right: 11px;}
+}
+/* end: breadcrumb */

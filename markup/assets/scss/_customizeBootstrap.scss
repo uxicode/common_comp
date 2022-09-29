@@ -1,0 +1,78 @@
+@import "bootstrap-extended";
+@import "./components";
+
+
+/* Default variable overrides (재정의 파트) */
+/* 재정의가 명시되는 부분을 variables 파일 위쪽에서 되어야함 primary 이름의 변수를 노란색으로 재정의 */
+/* Required (부트스트랩 커스터마이즈 문서에서 가져옴) */
+//@import "../../../../node_modules/bootstrap/scss/functions";
+
+$btn-font-size: 14+px;
+$btn-font-size-sm: 12+px;
+$btn-font-size-lg: 16+px;
+$input-font-size: 12+px;
+$input-padding-y: 0.687rem; ////jbc 0.71428rem;
+$input-line-height: 1.4;
+
+$btn-padding-y-sm: 0.58rem;
+$btn-padding-x-sm: 1.14rem;
+
+$btn-padding-y-lg:1.15rem;
+$btn-padding-x-lg:2.05rem;
+
+$form-select-line-height: 1.4;
+$form-select-padding-y: 0.71428rem;
+$form-select-padding-y-sm: 0.41rem;
+$form-select-padding-x-sm: 0.857rem;
+
+
+
+//
+//
+///* Required */
+//@import "../../../../node_modules/bootstrap/scss/variables";
+//@import "../../../../node_modules/bootstrap/scss/utilities";
+//@import "../../../../node_modules/bootstrap/scss/mixins";
+//
+//// Layout & components
+//@import "../../../../node_modules/bootstrap/scss/root";
+//@import "../../../../node_modules/bootstrap/scss/reboot";
+//@import "../../../../node_modules/bootstrap/scss/type";
+//@import "../../../../node_modules/bootstrap/scss/images";
+//@import "../../../../node_modules/bootstrap/scss/containers";
+//@import "../../../../node_modules/bootstrap/scss/grid";
+//@import "../../../../node_modules/bootstrap/scss/tables";
+//@import "../../../../node_modules/bootstrap/scss/forms";
+//@import "../../../../node_modules/bootstrap/scss/buttons";
+//@import "../../../../node_modules/bootstrap/scss/transitions";
+//@import "../../../../node_modules/bootstrap/scss/dropdown";
+//@import "../../../../node_modules/bootstrap/scss/button-group";
+//@import "../../../../node_modules/bootstrap/scss/nav";
+//@import "../../../../node_modules/bootstrap/scss/navbar";
+//@import "../../../../node_modules/bootstrap/scss/card";
+//@import "../../../../node_modules/bootstrap/scss/accordion";
+//@import "../../../../node_modules/bootstrap/scss/breadcrumb";
+//@import "../../../../node_modules/bootstrap/scss/pagination";
+//@import "../../../../node_modules/bootstrap/scss/badge";
+//@import "../../../../node_modules/bootstrap/scss/alert";
+//@import "../../../../node_modules/bootstrap/scss/progress";
+//@import "../../../../node_modules/bootstrap/scss/list-group";
+//@import "../../../../node_modules/bootstrap/scss/close";
+//@import "../../../../node_modules/bootstrap/scss/toasts";
+//@import "../../../../node_modules/bootstrap/scss/modal";
+//@import "../../../../node_modules/bootstrap/scss/tooltip";
+//@import "../../../../node_modules/bootstrap/scss/popover";
+//@import "../../../../node_modules/bootstrap/scss/carousel";
+//@import "../../../../node_modules/bootstrap/scss/spinners";
+//@import "../../../../node_modules/bootstrap/scss/offcanvas";
+//
+//// Helpers
+//@import "../../../../node_modules/bootstrap/scss/helpers";
+//
+//// Utilities
+//@import "../../../../node_modules/bootstrap/scss/utilities/api";
+
+/* 부트스트랩 scss */
+//@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+

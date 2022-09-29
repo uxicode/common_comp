@@ -1,0 +1,69 @@
+$total:52;
+
+// site width
+$minWidth:1200px;
+
+$fontFamily:'NotoSansKR', 'Malgun Gothic', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans',  '돋움', 'dotum', '굴림', 'gulim', sans-serif;
+$fontFamily2:'Inter', sans-serif;
+$baseFontSize:1rem;
+$indentValue:-9999em;
+
+$fontColor2: #646464;
+$fontColor2-1:#A0A0A0;
+
+//btn var start
+$btnFontColor:#fff;
+$btnColor:#9e003d;
+$btnActiveColor:#006fdd;
+$btnDisabledColor:#cddbe8;
+$btnDisabledColor2:#dcdcdc;
+
+$btnPrimaryColor:#bc4343;
+$btnPrimaryActiveColor:#cc004f;
+$btnPrimaryDisabledColor:#888888;
+$btnPrimaryDisabledBgColor:#7e4158;
+
+$btnSecondColor:#434351;
+$btnSecondActiveColor:#575774;
+$btnSecondDisabledColor:#444444;
+$btnSecondDisabledBgColor:#24242c;
+//btn var end
+
+
+@for $i from 0 through $total {
+  $unit: if($i == 0,  !important, px !important);
+
+  .mgt-#{$i} {
+    margin-top:  #{$i}#{$unit};
+  }
+  .mgb-#{$i} {
+    margin-bottom:  #{$i}#{$unit};
+  }
+  .mgl-#{$i} {
+    margin-left:  #{$i}#{$unit};
+  }
+  .mgr-#{$i} {
+    margin-right:  #{$i}#{$unit};
+  }
+  .pdt-#{$i} {
+    padding-top:  #{$i}#{$unit};
+  }
+  .pdb-#{$i} {
+    padding-bottom:  #{$i}#{$unit};
+  }
+  .pdl-#{$i} {
+    padding-left:  #{$i}#{$unit};
+  }
+  .pdr-#{$i} {
+    padding-right:  #{$i}#{$unit};
+  }
+
+  .wd-#{$i} {
+    width:  #{$i}#{$unit};
+  }
+  .ht-#{$i} {
+    height:  #{$i}#{$unit};
+  }
+}
+
+

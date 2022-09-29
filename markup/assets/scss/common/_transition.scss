@@ -1,0 +1,216 @@
+// enter / leave 참고 내용
+// v-enter : enter 시작상태
+// v-enter-active( enter, enter-to ) : enter 에 대한 활성 및 종료 상태. 엘리먼트가 삽입되기 전에 적용. 트랜지션 / 애니메이션이 완료되면 제거.
+// v-leave :  leave 를 위한 시작 상태.
+// v-leave-active( leave, leave-to ) : leave 에 대한 활성 및 종료 상태. 진출 트랜지션이 트리거되면 적용되고 트랜지션 / 애니메이션이 완료되면 제거.
+/* router page change motion */
+.page-change-enter-active {
+    transition: all 0.35s ease;
+}
+.page-change-leave-active {
+    transition: all 0.75s ease;
+}
+
+.page-change{
+    position: absolute;
+}
+.page-change-enter{
+    opacity: 0;
+    transform: scale(0.8);
+}
+.page-change-leave-to{
+    // 비활성화 되어 있는 엘리먼트가 relative 가 되어 있기에 등장시 삐걱거림이 있기에 포지션을 절대값으로 해둔다.
+    opacity: 0;
+    transform:translateY(100%) rotateZ(45deg);
+}
+/* slide out motion */
+.slide-out-enter-active {
+    transition: all .75s ease;
+}
+.slide-out-leave-active {
+    transition: all .75s;
+}
+// -leave-active( leave, leave-to )
+.slide-out-enter{
+    opacity: 0;
+    transform: translateX(10%);
+}
+.slide-out-leave-to{
+    opacity: 0;
+    transform: translateX(-10%);
+}
+
+
+/* slide out motion */
+.slideY-enter-active{
+    transition: all .75s ease;
+}
+.slideY-leave-active {
+    transition: all .75s;
+}
+// -leave-active( leave, leave-to )
+// 진입시
+.slideY-enter{
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all .75s ease;
+}
+// 진출시
+.slideY-leave-to{
+    opacity: 0;
+    transform: translateY(-20%);
+}
+
+
+
+
+
+
+
+/* slide out motion */
+.fade-enter-active {
+    transition: all .75s ease;
+}
+.fade-leave-active {
+    transition: all .75s;
+}
+// -leave-active( leave, leave-to )
+.fade-enter{
+    opacity: 1;
+}
+.fade-leave-to{
+    opacity: 0;
+}
+.shake{
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.short-shake{
+    animation: shake-horizontal 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(8px);
+    }
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+//ripple - jbc 추가
+.btn.is-ripple{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.ripple-effect {
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    //opacity: 0;
+    background: radial-gradient(rgba(255,255,255,.2) 0,rgba(255,255,255,.3) 40%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.5) 60%,rgba(255,255,255,0) 70%);
+    //transition: all .5s ease-out;
+    //background: rgba(0, 0, 0, .35);
+    animation: ripple 0.6s linear;
+    transition-property: transform,opacity;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+@keyframes ripple{
+    to{
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
+//modal transition
+.modal-enter-active, .modal-leave-active {
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+//.modal-enter .popup-dialog,
+.modal-leave-active .popup-dialog, .modal-leave-active .modal-dialog{
+    transform: translate(-50%, -50%) scale(0.3);
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+//jbc - arrow 모션
+[class*=dropdown-]{
+    .icon-chevron-down{
+        transform-origin: 50% 50%;
+        transition: all 0.3s ease-in-out;
+        transform: rotate(0deg);
+    }
+    &.active{
+        .icon-chevron-down{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+
+.slideUp-enter-active, .slideUp-leave-active {
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.slideUp-enter {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+.slideUp-leave-active {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+//filter list
+.trans-list{
+    display: inline-block;
+    margin-right: 10px;
+}
+.trans-list-enter-active, .trans-list-leave-active {
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.trans-list-enter {
+    opacity: 0;
+    transform: scale(0.3);
+}
+.trans-list-leave-active {
+    opacity: 0;
+    transform: scale(0.3);
+}
+// enter / leave 참고 내용
+// v-enter : enter 시작상태
+// v-enter-active( enter, enter-to ) : enter 에 대한 활성 및 종료 상태. 엘리먼트가 삽입되기 전에 적용. 트랜지션 / 애니메이션이 완료되면 제거.
+// v-leave :  leave 를 위한 시작 상태.
+// v-leave-active( leave, leave-to ) : leave 에 대한 활성 및 종료 상태. 진출 트랜지션이 트리거되면 적용되고 트랜지션 / 애니메이션이 완료되면 제거.

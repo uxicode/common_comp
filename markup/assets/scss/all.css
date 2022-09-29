@@ -1,0 +1,20 @@
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 14 | @import 'node_modules/bootstrap/scss/functions'; // Bootstrap core function
+ *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   bootstrap-extended/_include.scss 14:9  @import
+ *   _bootstrap-extended.scss 11:9          @import
+ *   _customizeBootstrap.scss 1:9           @import
+ *   all.scss 4:9                           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @import 'node_modules/bootstrap/scss/functions'; // Bootstrap core function\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   bootstrap-extended/_include.scss 14:9  @import\a   _bootstrap-extended.scss 11:9          @import\a   _customizeBootstrap.scss 1:9           @import\a   all.scss 4:9                           root stylesheet";
+}

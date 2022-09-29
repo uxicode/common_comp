@@ -1,0 +1,89 @@
+/* ================ badge custom ================ */
+.badge { //기본 긴 타입
+  min-width: 82px;
+  font-size: 80% !important;
+  font-weight: normal!important;
+  vertical-align: top!important;
+  padding: 0.358rem 0.5rem;
+  &.sm-normal{ //기본 작은 타입
+    min-width: 55px;
+  }
+  &.sm { //작은 라운드 타입
+    min-width: 55px;
+    border-radius: 10px;
+  }
+}
+
+/* badge 색상 추가 */
+.badge{
+  &.bg-blue{
+    background-color: #678ff0!important;
+    border-color: #678ff0!important;
+  }
+  &.bg-purple{
+    background-color: #ac51ef!important;
+    border-color: #ac51ef!important;
+  }
+  &.bg-skyblue{
+    background-color: #7bd4ff !important;;
+    border-color: #7bd4ff !important;
+  }
+  &.bg-gray{
+    background-color: #babfc7 !important;
+    border-color: #babfc7 !important;
+  }
+  &.bg-darkgray {
+    background-color: #8f9298 !important;
+    border-color: #8f9298 !important;
+  }
+  &.bg-darkblue {
+    background-color: #d6e1f2 !important;
+    border-color: #d6e1f2 !important;
+    color: #6c6f7e!important;
+  }
+  &.bg-red {
+    background-color: #52a7ff !important;
+  }
+  &.bg-lightblue {
+    background-color: #ff5c5c !important;
+  }
+  &.bg-yellow {
+    background-color: #ffcd56 !important;
+  }
+}
+
+
+/* badge-cnt */
+.badge-cnt {
+  line-height: 19px;
+
+  /* text + badge */
+  .bdg-txt + .badge {
+    margin-top: 4px;
+  }
+
+  /* badge + button */
+  .badge + .btn {
+    margin-top: 4px;
+  }
+
+  /* icon-btn + badge */
+  .icon-btn + .badge {
+    margin-top: 10px;
+  }
+}
+
+
+/* badge(new) */
+.new-notice {
+  .badge {
+    font-size: 10px !important;
+    padding: 0.23rem 0.3rem;
+    min-width: auto;
+    height: 17px;
+    &.bg-danger {
+      width: 17px;
+      border-radius: 50%;
+    }
+  }
+}

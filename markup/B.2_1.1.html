@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>B.2_1.1</title>
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="popup">
+            <div class="modal-dim"></div>
+            <div class="modal" style="display: block" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="width:1280px">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">이벤트 불러오기</h5>
+                            <button type="button" class="btn-close"  aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-sub-top">
+                                <div class="tb-style full">
+                                    <div class="tb-cell">
+                                        <p class="num-cnt">총 <span class="total-num">5</span> 개 등록<span class="current-num">4</span>개 운영 중</p>
+                                    </div>
+                                    <div class="tb-cell text-end">
+                                        <div class="inline-form">
+<!--                                            <div class="form-group">-->
+<!--                                                <label class="pdr-10">혜택유형</label>-->
+<!--                                                <select class="form-select" style="width: 100px;">-->
+<!--                                                    <option value="">포인트형</option>-->
+<!--                                                    <option value="1">1</option>-->
+<!--                                                    <option value="2">2</option>-->
+<!--                                                    <option value="3">3</option>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                            <div class="form-group mgl-20">-->
+<!--                                                <label class="pdr-10">추첨 유형</label>-->
+<!--                                                <select class="form-select" style="width: 150px;">-->
+<!--                                                    <option value="">선착순+랜덤추첨</option>-->
+<!--                                                    <option value="1">1</option>-->
+<!--                                                    <option value="2">2</option>-->
+<!--                                                    <option value="3">3</option>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+                                            <div class="form-group mgl-20">
+                                                <div class="input-group">
+                                                    <label class="pdr-10" style="vertical-align: middle">검색</label>
+                                                    <input type="text" class="form-control" placeholder="제목 + 내용으로 검색">
+                                                    <button class="btn btn-outline-primary" type="button">검색</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tb-scroll">
+                                <div class="tb-cnt" style="height: 710px;">
+                                    <table class="tb list mgt-40">
+                                        <colgroup>
+                                            <col style="width:5%">
+                                            <col style="width:10%">
+                                            <col style="width:12%;">
+                                            <col style="width:10%">
+                                            <col style="width:auto">
+                                            <col style="width:14%">
+                                            <col style="width:13%">
+                                            <col style="width:10%">
+                                            <col style="width:7%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" style="width:5%">No</th>
+                                            <th scope="col" style="width:10%">등록일</th>
+                                            <th scope="col" style="width:12%;">이미지</th>
+                                            <th scope="col" style="width:10%">혜택유형</th>
+                                            <th scope="col" style="width:auto">제목</th>
+                                            <th scope="col" style="width:14%">추첨유형</th>
+                                            <th scope="col" style="width:13%">이벤트기간</th>
+                                            <th scope="col" style="width:10%">마감일/상태</th>
+                                            <th scope="col" style="width:7%">선택</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- start: 테이블 셀 컨텐츠 영역 -->
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge bg-purple">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" checked>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-success">포인트 증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge bg-blue">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="paused">
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-warning">자선행사</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge bg-danger">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="paused">
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge bg-warning">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge bg-success">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                2021-11-12<br>
+                                                14:22
+                                            </td>
+                                            <td>
+                                                <div class="img-cnt" style="height: 80px; background: #d8d8d8">
+                                                    <img src="" alt="">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>상품형</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td class="text-start">
+                                                고척스카이돔 초대권 증정 이벤트!
+                                            </td>
+                                            <td>
+                                                선착순+<br>
+                                                랜덤추첨
+                                            </td>
+                                            <td>
+                                                <div class="text-start">
+                                                    2021-11-15 20:00 ~<br>
+                                                    2021-11-16 00:00
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>D-day (-01:00)</p>
+                                                <span class="badge badge-light-primary">상품증정</span>
+                                            </td>
+                                            <td>
+                                                <div class="form-radio inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" >
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <!-- end: 테이블 셀 컨텐츠 영역 -->
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-cnt float-lt">
+                                <button type="button" class="btn btn-outline-primary btn-lg">취소</button>
+                            </div>
+                            <div class="btn-cnt float-rt">
+                                <button type="button" class="btn btn-primary btn-lg">불러오기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+$modalDepth: 1050;
+$popupDepth: 10;
+
+.popup {
+  z-index: $popupDepth;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.popup-dialog, .modal-dialog{
+  min-width: 400px;
+  @include abs-center($zIndex: $modalDepth);
+  margin: 0 auto;
+  //padding: 0 20px;
+  //box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
+  //background-color: #ffffff;
+  .scroll-body {
+    overflow-y: auto;
+  }
+}
+
+.popup-header {
+  position: relative;
+  padding: 30px 40px 20px;
+
+  .popup-header-tit {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .popup-close, .popup-btn {
+    @include pos-abs($right: 40px, $top: 30px);
+  }
+}
+
+.modal .modal-header {
+  padding:25px;
+
+  .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &.bd-type{
+    background: transparent;
+    border-bottom: 1px solid #e7e5eb;
+  }
+
+  .btn-close {
+    transform: translate(26px, -32px);
+    &:hover,
+    &:focus,
+    &:active {
+      transform: translate(16px, -22px);
+    }
+  }
+}
+
+
+/* ================= modal custom ================= */
+.modal-sub-top{
+  padding: 5px 0 15px 0;
+  .num-cnt{
+    position: relative;
+    .current-num:before{
+      content: "";
+      display: inline-block;
+      margin: -2px 7px;
+      width: 1px;
+      height: 13px;
+      background-color: #ebe9f1;
+    }
+  }
+}
+
+.modal-footer{
+  position: relative;
+  display: block;
+  padding: 22px 24px!important;
+  &.type2{
+    margin: 0 24px;
+    padding: 18px 0!important;
+  }
+}
+
+
+/* popup table 안에 있는 작은 이미지 */
+.img-cnt.tb-img{width: 75px}
+
+
+/* popup 안에 직관 인증 이미지 */
+.img-cnt.certification {
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+  > img {object-fit: unset;}
+}
+
+
+// 공통 팝업 - ksj
+.modal-dialog.common {
+  width: 400px;
+  .modal-header {
+    background-color: #fff;
+  }
+  .modal-body {
+    padding: 0 0 20px 0;
+    .msg {
+      margin-top: -20px;
+      font-weight: 500;
+      line-height: 1.57;
+      text-align: center;
+      color: #525252;
+    }
+  }
+  .modal-footer {
+    padding: 20px 0;
+    border-top: none;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none;
+  }
+}

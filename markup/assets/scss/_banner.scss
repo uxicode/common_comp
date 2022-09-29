@@ -1,0 +1,189 @@
+// ksj - 이미지 업로드
+.img-upload {
+  margin-right: 8px;
+
+  button {
+    width: 83px;
+    height: 83px;
+    border-radius: 5px;
+    border: solid 1px #7666f8;
+    background-color: #f4f3ff;
+  }
+  .icon-plus:before {
+    font-size: 20px;
+    color: #7367f0;
+  }
+}
+
+.uploaded-img {
+  position: relative;
+  vertical-align: top;
+  width: 140px;
+  height: 83px;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .btn-delete {
+    @include pos-abs($right: 0, $top: 0);
+    width: 34px;
+    height: 34px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 3px 8px 0 rgba(167, 174, 181, 0.4);
+    background-color: rgba(255, 255, 255, 0.56);
+
+    .icon-x1:before {
+      font-size: $btn-font-size-lg;
+      color: #525252;
+    }
+  }
+
+  .btn-modify {
+    @include pos-abs($left: 0, $bottom: 0);
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+}
+
+.hint {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  color: #b9b9c3;
+
+  // .card-body .form-type td 안에서 사용
+  &.right {
+    @include pos-abs($left: 170px, $bottom: 15px);
+    line-height: 1.92;
+    letter-spacing: 0.6px;
+  }
+  &.type2{
+    font-size: 12px;
+  }
+}
+
+.txt-underline {
+  text-decoration: underline !important;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #696cff;
+}
+
+.num {
+  font-weight: 500;
+  color: #525252;
+}
+
+.num-purple {
+  line-height: 1.75;
+  color: #7367f0;
+}
+
+.selected-box {
+  position: relative;
+  width: 550px;
+  height: 48px;
+  border-radius: 6px;
+  border: solid 1px #ebe9f1;
+  background-color: #f7f7f9;
+
+  .img-cnt {
+    display: inline-block;
+    width: 75px;
+    height: 46px;
+
+    img {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-right: solid 1px #d9d9d9;
+    }
+  }
+
+  .desc {
+    @include pos-vertical($right: 15px);
+
+    .type, .status {font-weight: 500;}
+    .type:after {
+      content: '|';
+      width: 1px;
+      margin: 0 10px;
+      font-size: 14px;
+      color: #ebe9f1;
+    }
+    .status {
+      color: #8e8e8e;
+    }
+  }
+
+  .btn-delete {
+    padding-left: 10px;
+    > i {
+      font-size: 24px;
+    }
+  }
+}
+
+.txt-purple {
+  font-weight: 500;
+  color: #ac51ef;
+}
+.txt-light-purple{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #7367f0;
+}
+
+
+/* editor container */
+.editor-cnt {
+  width: 552px;
+  border-radius: 6px;
+  border: solid 1px #d8d6de;
+  &.disabled{
+    background-color: #efefef;
+  }
+}
+
+
+/* 추첨완료 */
+.result-badge{
+  padding: 11px 20px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #ff8638;
+  border-radius: 5px;
+  background-color: #fcf2ec;
+  .time{
+    font-weight: normal;
+  }
+}
+
+/* push 예약 완료 */
+.push-btn{
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #eb62b9;
+  border-radius: 5px;
+  border: solid 1px #eb62b9;
+  vertical-align: baseline;
+  .date{
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}

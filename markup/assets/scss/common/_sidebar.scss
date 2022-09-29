@@ -1,0 +1,147 @@
+/*sub page container*/
+$asideW: 198px;
+$marginLeft: 0;
+$gapX: $asideW + $marginLeft;
+
+
+/* start: aside-menu */
+aside {
+  z-index: 210;
+  position: fixed;
+  top: 60px;
+  left: $marginLeft;
+  width: $asideW;
+  height: 100vh;
+
+  + .sub-container {
+    margin: 80px 0 0 $gapX;
+  }
+}
+
+.aside-header {
+  width: 280px;
+  position: relative;
+  padding: 2.35rem 1rem 3.3rem 1.64rem;
+  transition: 300ms ease all, background 0s;
+  background: #262731;
+}
+
+.aside-content {
+  .navigation {
+    padding: 10px 0 20px 0;
+    margin: 0 22px;
+
+    li a i {
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 14px;
+      opacity: 0.4;
+      vertical-align: middle;
+    }
+  }
+
+  .aside-tit {
+    color: #ffffff;
+    font-size: 13px;
+    vertical-align: bottom;
+  }
+}
+
+
+.aside-menu.menu-dark .navigation li a {
+  width: 100%;
+  color: #d0d0d0;
+  padding: 6px 13px;
+  line-height: 1.45;
+}
+
+.nav-item-tit {
+  padding: 20px 0 5px 0;
+  margin: 0 14px;
+  color: #72747f;
+  font-size: 11px;
+}
+
+.nav-item {
+  ul > li {
+    > a {
+      position: relative;
+      transition: all .5s ease;
+
+      &:after {
+        content: '';
+        @include pos-abs($top: 0, $left: 0);
+        width: 100%;
+        height: 34px;
+        border-radius: 4px;
+        background: #7e72f2;
+        transform-origin: 0 50%;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: all .5s ease;
+        z-index: -1;
+      }
+    }
+
+    &.active {
+      > a {margin-left: 3px;}
+
+      > a:after { //jbc
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+      > a > i {
+        color: #ffffff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* 대시보드 main-tit */
+.aside-main-tit .aside-tit {
+  //vertical-align: text-top;
+  //font-size: 16px;
+}
+
+.more-btn > i {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+
+
+/* 키움로고 */
+.logo {
+  .img-cnt {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    > img {
+      width: 100%
+    }
+  }
+
+  .logo-tit {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    vertical-align: top;
+    padding-top: 5px;
+  }
+
+  > strong {
+    vertical-align: middle;
+    padding-left: 7px;
+  }
+}
+
+
+
+/* end: aside-menu */
+
+

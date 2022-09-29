@@ -1,0 +1,69 @@
+/*form-group*/
+.form-group {
+  position: relative;
+}
+
+.inline-form .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.inline-form .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form-group + .btn-cnt {
+  display: inline-block;
+}
+
+/*form-select*/
+.form-select {
+  width: auto;
+  display: inline-block;
+}
+
+/*calendar*/
+.inline-form.calendar .form-group:first-child {
+  position: relative;
+  margin-right: 20px;
+}
+
+.form-control.cal {
+  padding-left: 40px !important;
+}
+
+.form-control + .ico-btn {
+  z-index: 3;
+  position: absolute;
+  top: 1px;
+  right: 80%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  color: #979797;
+  background-color: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+}
+
+.btn-cnt + .form-group {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* ================= form-group custom ================= */
+.input-group > .form-control {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.form-group > .input-group {
+  display: inline-table !important;
+}
+
+/*# sourceMappingURL=form.css.map */

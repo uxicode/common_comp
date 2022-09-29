@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+  <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+  <meta name="author" content="PIXINVENT">
+  <title>EL.4.4_a</title>
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+  <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<body>
+<div class="wrapper">
+  <header>
+    <nav class="header-navbar navbar navbar-expand-lg">
+      <div class="navbar-container d-flex content">
+<!--        <div class="bookmark-wrapper d-flex align-items-center">-->
+<!--          <ul class="nav navbar-nav bookmark-icons">-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-info">LIVE!</span>-->
+<!--                <i class="icon-radio"></i>-->
+<!--                <span class="tit">경기 라이브</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-danger">1</span>-->
+<!--                <i class="icon-gift"></i>-->
+<!--                <span class="tit">이벤트 마감</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="#" class="nav-link">-->
+<!--                <span class="badge bg-danger">N</span>-->
+<!--                <i class="icon-headphones"></i>-->
+<!--                <span class="tit">1:1 문의</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+        <ul class="nav navbar-nav align-items-center ms-auto">
+          <li class="nav-item dropdown dropdown-user">
+            <a class="nav-link dropdown-toggle dropdown-user-link">
+              <div class="user-nav d-sm-flex">
+                <span class="user-name fw-bold">Heroesbase</span>
+                <span class="user-status fw-light">슈퍼운영자</span>
+              </div>
+              <i class="icon-chevron-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="user-menu">
+        <li><a href="#"><i class="icon-lock"></i><span class="item fw-bold">비밀번호 변경</span></a></li>
+        <li><a href="#"><i class="icon-log-out"></i><span class="item fw-bold">로그아웃</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="aside-menu menu-fixed menu-dark">
+      <div class="aside-header">
+        <h1 class="logo">
+          <a href="#">
+                        <span class="img-cnt">
+                            <img src="./assets/images/common/logo.png" alt="">
+                        </span>
+            <p class="logo-tit">KiwoomHeroes<br> APP Admin</p>
+          </a>
+        </h1>
+      </div>
+      <div class="aside-content">
+        <ul class="navigation">
+          <li class="nav-item">
+            <ul>
+              <li><a href="#" class="aside-main-tit"><i class="icon-home"></i><span class="aside-tit">대시보드</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">회원 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-user"></i><span class="aside-tit">회원정보 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">멤버쉽 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-users"></i><span class="aside-tit">멤버쉽 이력 관리</span></a></li>
+                            <li><a href="#"><i class="icon-award"></i><span class="aside-tit">등급/포인트 관리</span></a></li>
+              <li><a href="#"><i class="icon-star"></i><span class="aside-tit">멤버쉽 혜택 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">배너관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-copy"></i><span class="aside-tit">메인배너 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">이벤트 관리</p>
+            <ul>
+              <li class="active"><a href="#"><i class="icon-radio"></i><span class="aside-tit">라이브 이벤트</span></a></li>
+              <li><a href="#"><i class="icon-general-event"></i><span class="aside-tit">일반 이벤트</span></a></li>
+              <li><a href="#"><i class="icon-gift"></i><span class="aside-tit">경품 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">1:1 문의</p>
+            <ul>
+              <li><a href="#"><i class="icon-headphones"></i><span class="aside-tit">1:1 문의</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">커뮤니티 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-clock"></i><span class="aside-tit">타임라인 관리</span></a></li>
+              <li><a href="#"><i class="icon-clipboard"></i><span class="aside-tit">펜게시판 관리</span></a></li>
+              <li><a href="#"><i class="icon-alert-triangle"></i><span class="aside-tit">신고글 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">알림 관리</p>
+            <ul>
+                <li><a href="#"><i class="icon-bell"></i><span class="aside-tit">Push 관리</span></a></li>
+                <li><a href="#"><i class="icon-mail"></i><span class="aside-tit">Email 관리</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item-tit">앱 설정</p>
+            <ul>
+              <li>
+                <a href="#"><i class="icon-help-circle"></i><span class="aside-tit">자주묻는질문 관리</span><span class="more-btn"><i class="icon-chevron-right float-rt mgr-0"></i></span></a>
+                <ul class="sub-content" style="display: block">
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                  <li><a href="#"><i class="icon-circle"></i><span class="menu-item">List</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="icon-layers"></i><span class="aside-tit">버전 관리</span></a></li>
+              <li><a href="#"><i class="icon-file-text"></i><span class="aside-tit">약관 관리</span></a></li>
+              <li><a href="#"><i class="icon-notice"></i><span class="aside-tit">공지사항 관리</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <p class="nav-item-tit">관리자 관리</p>
+            <ul>
+              <li><a href="#"><i class="icon-settings"></i><span class="aside-tit">관리자 관리</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents-wrap">
+      <div class="contents">
+        <div class="content-header">
+          <div class="content-header-left col-md-9 col-12">
+            <div class="breadcrumbs-top">
+              <div class="col-12">
+                <h2 class="content-header-title float-start ">당첨자 추첨하기</h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">이벤트 관리</li>
+                    <li class="breadcrumb-item">일반 이벤트</li>
+                    <li class="breadcrumb-item">일반이벤트 상세</li>
+                    <li class="breadcrumb-item">당첨자 추첨하기</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-body">
+          <div class="tb-style event-info mgt-20">
+            <div class="tb-cell event-left live">
+              <span class="badge bg-info">라이브</span>
+              <p class="tit mgt-15">고척돔 직관인증 이벤트!</p>
+              <p class="desc mgt-8">직관인증하면 선착순으로 스페셜 모자를 드립니다.</p>
+            </div>
+            <div class="tb-cell event-right">
+              <div class="tb-cnt">
+                <table class="tb">
+                  <colgroup>
+                    <col style="width:16.9%">
+                    <col style="width:auto">
+                    <col style="width:16.9%">
+                    <col style="width:36.84%">
+                  </colgroup>
+                  <tbody>
+
+                  </tbody>
+                  <tr>
+                    <th>•  총 참여인원</th>
+                    <td><strong class="num-purple">4,993</strong> 명</td>
+                    <th>•  추첨유형/인원</th>
+                    <td><strong class="num-purple">수동</strong> / <strong class="num-purple">8</strong>명</td>
+                  </tr>
+                  <tr>
+                    <th>•  이벤트 기간</th>
+                    <td>2021-11-11 ~ 2021-11-30</td>
+                    <th>•  혜택유형</th>
+                    <td>상품형(상품증정)</td>
+                  </tr>
+                  <tr>
+                    <th>•  메인배너 게시여부</th>
+                    <td><span class="badge sm bg-skyblue">Y</span></td>
+                    <td colspan="2">
+                      <div class="selected-box" style="width:439px;">
+                        <div class="img-cnt">
+                          <img src="assets/images/pages/img-cap.png" alt="모자">
+                        </div>
+                        <a href="javascript:void(0)" class="txt-underline mgl-15">2021 고급형 스페셜 모자</a>
+                        <div class="desc">
+                          <span class="type">상품형</span>
+                          <span class="status">재고 <strong class="num">2,000</strong> 개</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-cnt">
+            <div class="card filter mgt-20">
+              <div class="card-body">
+                <div class="form-group mgr-15">
+                  <span class="select-label">가입타입</span>
+                  <div class="dropdown-cnt" data-dropdown="checkbox" style="width:216px;">
+                    <button class="btn dropdown-options" type="button">전체</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>전체</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>네이버</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>카카오</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>페이스북</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>구글</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>이메일</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group mgr-15">
+                  <span class="select-label">성별</span>
+                  <div class="dropdown-cnt" data-dropdown="checkbox" style="width:216px;">
+                    <button class="btn dropdown-options" type="button">전체</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>전체</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>남자</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>여자</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group mgr-15">
+                  <span class="select-label">나이</span>
+                  <div class="dropdown-cnt" data-dropdown="checkbox" style="width:216px;">
+                    <button class="btn dropdown-options" type="button">전체</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>10대 이하</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>20대</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>30대</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>40대</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>50대 이상</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <span class="select-label">멤버십</span>
+                  <div class="dropdown-cnt" data-dropdown="checkbox" style="width:216px;">
+                    <button class="btn dropdown-options" type="button">전체</button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>전체</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>골드</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>실버</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>플레티넘</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="value-txt">
+                          <p>일반</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="input-group" style="width:266px;">
+                  <input type="text" class="form-control" placeholder="회원명/닉네임/휴대폰/이메일 검색">
+                  <button class="btn btn-dark" type="button">검색</button>
+                </div>
+              </div>
+              <div class="card-footer">
+<!--                <div class="filter-group d-inline-flex">-->
+<!--                  <span class="tit">선택된 필터</span>-->
+<!--                  <span class="filter-tag mgl-12">네이버 <button type="button"><i class="icon-x1"></i></button></span>-->
+<!--                  <span class="filter-tag mgl-12">남자 <button type="button"><i class="icon-x1"></i></button></span>-->
+<!--                  <span class="filter-tag mgl-12">20대 <button type="button"><i class="icon-x1"></i></button></span>-->
+<!--                  <span class="filter-tag mgl-12">골드 <button type="button"><i class="icon-x1"></i></button></span>-->
+<!--                </div>-->
+                <div class="btn-cnt d-inline-flex float-rt">
+                  <button type="button" class="btn btn-outline-primary btn-ss mgr-10"><i class="icon-rotate-ccw"></i>필터 초기화</button>
+                  <button type="button" class="btn btn-dark btn-ss">필터 적용하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-cnt">
+            <div class="card tb-layout mgt-20">
+              <div class="card-body list-type">
+                <div class="tb-cnt">
+                  <p class="float-lt mgt-15 mgb-16 mgl-20">총 <span class="current-num">4,993</span>명 응모</p>
+                  <p class="float-rt mgt-15 mgb-16 mgr-20"><span class="current-num">4</span>명 선택 / <span class="current-num">8</span>명</p>
+                  <table class="tb list">
+                    <colgroup>
+                      <col style="width:80px">
+                      <col style="width:132px">
+                      <col style="width:auto">
+                      <col style="width:122px">
+                      <col style="width:auto">
+                      <col style="width:81px">
+                      <col style="width:82px">
+                      <col style="width:132px">
+                      <col style="width:86px">
+                      <col style="width:150px">
+                      <col style="width:55px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>응모시각</th>
+                      <th>회원명/닉네임</th>
+                      <th>휴대폰번호</th>
+                      <th>아이디(이메일)</th>
+                      <th>회원번호</th>
+                      <th>가입타입</th>
+                      <th>가입일</th>
+                      <th>성별/나이</th>
+                      <th class="lt">멤버쉽/누적포인트</th>
+                      <th>선택</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- start: 테이블 셀 컨텐츠 영역 -->
+                    <tr>
+                      <td>1</td>
+                      <td>2021-11-12 14:22</td>
+                      <td>
+                        <p>김진현</p>
+                        <p class="txt-gray">(정후팬)</p>
+                      </td>
+                      <td>010-5652-1112</td>
+                      <td>jhk1232@naver.com</td>
+                      <td>
+                        <a href="javascript:void(0)" class="txt-underline">32162</a>
+                      </td>
+                      <td>
+                        <img src="assets/images/common/icn-24-24-login-naver.svg" alt="naver">
+                      </td>
+                      <td>2021-11-12 14:22</td>
+                      <td>남/28</td>
+                      <td class="lt">
+                        <img src="assets/images/pages/icn-24-24-gold.svg" alt="gold" class="mgr-6">
+                        <span>11,000P</span>
+                      </td>
+                      <td>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input float-none" id="customCheck3">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="active">
+                      <td>2</td>
+                      <td>2021-11-12 14:22</td>
+                      <td>
+                        <p>김진현</p>
+                        <p class="txt-gray">(정후팬)</p>
+                      </td>
+                      <td>010-5652-1112</td>
+                      <td>jhk1232@kakao.com</td>
+                      <td>
+                        <a href="javascript:void(0)" class="txt-underline">32162</a>
+                      </td>
+                      <td>
+                        <img src="assets/images/common/icn-24-24-login-kakao.svg" alt="kakao">
+                      </td>
+                      <td>2021-11-12 14:22</td>
+                      <td>남/28</td>
+                      <td class="lt">
+                        <img src="assets/images/pages/icn-24-24-silver.svg" alt="silver" class="mgr-6">
+                        <span>6,000P</span>
+                      </td>
+                      <td>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input float-none" id="customCheck5" checked>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="active">
+                      <td>3</td>
+                      <td>2021-11-12 14:22</td>
+                      <td>
+                        <p>김진현</p>
+                        <p class="txt-gray">(정후팬)</p>
+                      </td>
+                      <td>010-5652-1112</td>
+                      <td>jhk1232@gmail.com</td>
+                      <td>
+                        <a href="javascript:void(0)" class="txt-underline">32162</a>
+                      </td>
+                      <td>
+                        <img src="assets/images/common/icn-24-24-login-google.svg" alt="google">
+                      </td>
+                      <td>2021-11-12 14:22</td>
+                      <td>남/28</td>
+                      <td class="lt">
+                        <img src="assets/images/pages/icn-24-24-platinum.svg" alt="platinum" class="mgr-6">
+                        <span>20,000P</span>
+                      </td>
+                      <td>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input float-none" id="customCheck6" checked>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- end: 테이블 셀 컨텐츠 영역 -->
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <ul class="pagination justify-content-center mgt-30">
+                  <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">4</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item next"><a class="page-link" href="#"></a></li>
+                </ul>
+
+                <div class="tb-cnt mgt-30">
+                  <table class="tb list">
+                    <colgroup>
+                      <col style="width:80px">
+                      <col style="width:132px">
+                      <col style="width:auto">
+                      <col style="width:122px">
+                      <col style="width:auto">
+                      <col style="width:81px">
+                      <col style="width:82px">
+                      <col style="width:132px">
+                      <col style="width:86px">
+                      <col style="width:150px">
+                      <col style="width:55px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>응모시각</th>
+                      <th>회원명/닉네임</th>
+                      <th>휴대폰번호</th>
+                      <th>아이디(이메일)</th>
+                      <th>회원번호</th>
+                      <th>가입타입</th>
+                      <th>가입일</th>
+                      <th>성별/나이</th>
+                      <th class="lt">멤버쉽/누적포인트</th>
+                      <th>선택</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- start: 테이블 셀 컨텐츠 영역 -->
+                    <tr class="active">
+                      <td>1</td>
+                      <td>2021-11-12 14:22</td>
+                      <td>
+                        <p>김진현</p>
+                        <p class="txt-gray">(정후팬)</p>
+                      </td>
+                      <td>010-5652-1112</td>
+                      <td>jhk1232@kakao.com</td>
+                      <td>
+                        <a href="javascript:void(0)" class="txt-underline">32162</a>
+                      </td>
+                      <td>
+                        <img src="assets/images/common/icn-24-24-login-kakao.svg" alt="kakao">
+                      </td>
+                      <td>2021-11-12 14:22</td>
+                      <td>남/28</td>
+                      <td class="lt">
+                        <img src="assets/images/pages/icn-24-24-silver.svg" alt="silver" class="mgr-6">
+                        <span>6,000P</span>
+                      </td>
+                      <td>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input float-none" id="customCheck7" checked>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="active">
+                      <td>2</td>
+                      <td>2021-11-12 14:22</td>
+                      <td>
+                        <p>김진현</p>
+                        <p class="txt-gray">(정후팬)</p>
+                      </td>
+                      <td>010-5652-1112</td>
+                      <td>jhk1232@gmail.com</td>
+                      <td>
+                        <a href="javascript:void(0)" class="txt-underline">32162</a>
+                      </td>
+                      <td>
+                        <img src="assets/images/common/icn-24-24-login-google.svg" alt="google">
+                      </td>
+                      <td>2021-11-12 14:22</td>
+                      <td>남/28</td>
+                      <td class="lt">
+                        <img src="assets/images/pages/icn-24-24-platinum.svg" alt="platinum" class="mgr-6">
+                        <span>20,000P</span>
+                      </td>
+                      <td>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input float-none" id="customCheck8" checked>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- end: 테이블 셀 컨텐츠 영역 -->
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div class="card-footer">
+                <div class="btn-cnt d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-primary btn-lg-s">취소</button>
+                  <button type="button" class="btn btn-primary btn-lg-s disabled">추첨완료</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
