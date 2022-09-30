@@ -1,4 +1,4 @@
-# Dongnepedia Admin
+# side project 공통컴포넌트 
 
 ## 프로젝트 구성
 - Node : v16.15.0
