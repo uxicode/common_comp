@@ -34,6 +34,16 @@ npm test
 npm run build
 ```
 
+### 간단한 로그인 테스트를 위한 로컬 서버 구동
+```
+npm run auth
+```
+
+### 스토리북 실행 
+```
+npm run storybook
+```
+
 ### 설정 파일 추출 (webpack, babel, eslint 등) : 한번만 실행 가능 / 롤백 불가
 ```
 npm run eject

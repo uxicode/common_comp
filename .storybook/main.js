@@ -17,12 +17,6 @@ module.exports = {
         "builder": "@storybook/builder-webpack5"
     },
     "webpackFinal":async (config) => {
-        /*   // CSS Modules 지원
-        config.module.rules.find(
-         (rule) => rule.test.toString() === '/\\.css$/'
-         ).exclude = /\.module\.css$/;
-         */
-
         return merge(config, {
             module:{
                 rules: [
