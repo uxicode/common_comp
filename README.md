@@ -163,25 +163,74 @@ const Router = () => {
 
 ### @emotion/react
 - css in js 스타일 라이브러리
+- @emotion/babel-preset-css-prop 설치하고 craco.config.js 에 아래 코드 추가( pragma ( @jsxImportSource @emotion/react ) 설정을 안하게끔 한다. )
+```
+module.exports = {
+    babel: {
+        presets: ['@emotion/babel-preset-css-prop'],
+    },
+```
+
 
 ```
-/** @jsxImportSource @emotion/react */
-import { css, jsx } from '@emotion/react'
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
-const divStyle = css`
-  background-color: hotpink;
-  font-size: 24px;
-  border-radius: 4px;
-  padding: 32px;
-  text-align: center;
-  &:hover {
-    color: white;
-  }
-`
-
-export default function App() {
-  return <div css={divStyle}>Hover to change color.</div>
+type BtnProps={
+    color? : string;
+    size?: string;
 }
+type BtnTypeProps={
+    variant?: 'filled' | 'outline' ;
+} & BtnProps;
+
+const colors: { [key: string]: string }={
+    blue: '#4c76f4',
+    primary: '#7367f0', // default
+    danger: '#ea5455',
+    warning: '#ff9f43'
+};
+const getBtnColor=( color: string )=>{
+    if (!colors[color]) {
+        const regx=/^#/g;
+        if (regx.test( color )) {
+            return color;
+        }
+    }
+    return colors[color];
+}
+const getFilledColorStyle=(color?: string)=>{
+    return css`
+      background-color: ${ color ? getBtnColor( color ) : colors['primary'] };
+      border-color: ${ color ? getBtnColor( color ) : colors['primary'] };
+    `
+}
+const getOutlineColorStyle=(color?: string)=>{
+    return css`
+      color: ${ color ? getBtnColor( color ) : colors['primary'] };
+      background-color: rgba(255, 255, 255, 0.5 );
+      border-color: ${ color ? getBtnColor( color ) : colors['primary'] };
+    `
+}
+const buttonCommon=( {color, size, variant}: BtnTypeProps )=>{
+    return css`
+      position: relative;
+      //.......중략...........
+      color: #fff;
+      &:disabled, &.disabled {
+         //.......중략...........
+      }
+      ${variant==='filled'? getFilledColorStyle( color ) : getOutlineColorStyle( color )}
+      width: ${ size ? size : undefined };
+      min-width: ${ size ? '0' : '120px' };
+    `;
+}
+
+const BtnStyledComp=styled.button<BtnTypeProps>`
+  ${ ( props:BtnTypeProps) => { 
+    return buttonCommon(props);
+  } };
+`;
 ```
 
 ### Recoil
