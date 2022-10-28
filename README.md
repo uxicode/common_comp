@@ -232,28 +232,127 @@ const BtnStyledComp=styled.button<BtnTypeProps>`
     return buttonCommon(props);
   } };
 `;
+
+
+export {
+    BtnStyledComp
+}
+
+//호출 할 때 코드 
+import { BtnStyledComp } from '@/components/button/style';
+
+
 ```
 
 ### Recoil
-- React 전용 상태 관리 라이브러리
+- React 전용 상태 관리 라이브러리 / 제일 좋은 점은 기존에 mutation 단계가 없이 action 단계로 바로 적용.
 - atom : 상태의 단위, useRecoilState() 훅으로 읽고 쓰기 가능 (useState 와 유사)
 - selector : atoms 나 다른 selectors 를 입력으로 받아들이는 순수 함수(pure function), useRecoilValue() 로 읽기 가능
 
 ```
-const fontSizeState = atom({
-  key: 'fontSizeState',
-  default: 14,
+// src/recoil/auth/authAtom.ts
+import { atom } from 'recoil';
+const authAtom=atom({
+    key: 'loggedIn',
+    default: localStorage.getItem('token')
 });
+export default authAtom;
+//--------------------------------------------
+// src/recoil/auth/userAtom.ts
+import { atom } from 'recoil';
+const userAtom=atom({
+    key:'userData',
+    default:{}
+})
+export default userAtom
+//--------------------------------------------
+// src/recoil/auth/useLoggedInAction.ts
+import AuthService from '@/api/service/AuthService';
+import { useNavigate } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import authAtom from '@/recoil/auth/authAtom';
+import userAtom from '@/recoil/auth/userAtom';
 
-const fontSizeLabelState = selector({
-  key: 'fontSizeLabelState',
-  get: ({get}) => {
-    const fontSize = get(fontSizeState);
-    const unit = 'px';
+const useLoggedInActions=()=>{
+    //여기서 get 부분은 사용하지 않기에 그냥 공란으로 콤마(,) 표시로 자리만 설정해 둔다.
+    //useRecoilState 로 바로 store 의 state 들을 가져와서 바로 get/set 설정을 해둔다.
+    const [, setToken]=useRecoilState( authAtom );
+    const [, setUser]=useRecoilState( userAtom );
+    const navigate=useNavigate();
+    return {
+        login,
+        logout
+    }
+    function login(payload:{userId: string, userPw: string}){
+        const {userId, userPw}=payload;
+        console.log( 'userId, userPw=', userId, userPw );
 
-    return `${fontSize}${unit}`;
-  },
-});
+        return AuthService.login( userId, userPw )
+            .then((data)=>{
+                localStorage.setItem( 'token', data.accessToken );
+                setToken( data.accessToken);//authAtom 상태 변경 
+            })
+            .then(()=>{
+                AuthService.me()
+                    .then((data)=>{
+                        localStorage.setItem( 'user', data );
+                        setUser( data );//userAtom 상태 변경 
+                    })
+            });
+    }
+    function logout(){
+        localStorage.removeItem( 'token' );
+        localStorage.removeItem( 'user' );
+        setToken( null );//authAtom 상태 변경
+        setUser( {} );//userAtom 상태 변경 
+        navigate( '/login' );
+    }
+
+}
+export { useLoggedInActions };
+//--------------------------------------------
+//src/pages/sign/Login.tsx - 이 tsx 페이지에서 useLoggedInActions 호출한다.
+import React, { useCallback, useRef, useState } from 'react';
+import { css } from '@emotion/react';
+import { Navigate, useNavigate } from 'react-router-dom';
+import { useLoggedInActions } from '@/recoil/auth/useLoggedInActions';
+import TxtField from '@/components/form/input/TxtField';
+import Btn from '@/components/button/Btn';
+
+const Login=()=>{
+    const navigate=useNavigate();
+    const [userId, setUserId]=useState('');
+    const [userPw, setUserPw]=useState('');
+    
+    // ................중략...................
+    const authActions = useLoggedInActions();
+
+    const loginClickHandler=()=>{
+        authActions.login({userId, userPw})
+            .then(()=>{
+                navigate( '/' );
+            })
+            .catch((err)=>{
+                console.log( err );
+            });
+    }
+
+    return (
+        <div css={ loginForm }>
+            <div className="form-cnt">
+                   // ................중략...................
+                    <div className="login-btn d-grid mgt-35" >
+                        <Btn addClass="login-btn" size="400px" handler={ loginClickHandler } >로그인 버튼</Btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Login;
+
+
 ```
 
 ### Jest
